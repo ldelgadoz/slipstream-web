@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo completo de especialidades odontológicas en Clínica GoalDental OdontoStudio: Implantes dentales, ortodoncia invisible, carillas, blanqueamiento, periodoncia y sedación consciente.">
+  <title>Especialidades Odontológicas | CLÍNICA GOALDENTAL • ODONTOSTUDIO</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de Estilos Compartida -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BANNER DE CONTACTO -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-item">
+        <a href="../index.html" class="back-to-slipstream">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          ← Volver a Slipstream Web's
+        </a>
+      </div>
+      <div class="top-bar-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span><strong>Ubicación:</strong> Vía Complutense, 45, Alcalá de Henares (Madrid)</span>
+      </div>
+      <div class="top-bar-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span>Cita Prioritaria: <a href="tel:+34918000000" class="top-bar-link">918 00 00 00</a></span>
+      </div>
+      <div class="top-bar-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <span>WhatsApp: <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="top-bar-link">600 000 000</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR STICKY -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M2 12h20"></path>
+          </svg>
+        </div>
+        CLÍNICA GOALDENTAL <span>ODONTOSTUDIO</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="tratamientos.html" class="nav-link active">Tratamientos</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+      <a href="contacto.html" class="btn btn-primary btn-nav">Pedir Cita Gratis</a>
+    </div>
+  </header>
+
+  <!-- ENCABEZADO DE PÁGINA -->
+  <section class="page-hero-header">
+    <div class="container">
+      <span class="section-tag">Odontología Digital y Quirúrgica</span>
+      <h1>Nuestras Especialidades Odontológicas</h1>
+      <p>
+        Planes de tratamiento personalizados con tecnología 3D, laboratorio propio y máxima garantía médica por escrito.
+      </p>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO Y FILTROS -->
+  <section style="padding: 50px 0 80px;">
+    <div class="container">
+      <!-- Filtros Visuales -->
+      <div class="treatments-filter-bar">
+        <button class="filter-btn active" onclick="filterTreatments('all', this)">Todas las Especialidades</button>
+        <button class="filter-btn" onclick="filterTreatments('implantes', this)">Implantes Dentales</button>
+        <button class="filter-btn" onclick="filterTreatments('ortodoncia', this)">Ortodoncia Invisible</button>
+        <button class="filter-btn" onclick="filterTreatments('estetica', this)">Estética Dental</button>
+        <button class="filter-btn" onclick="filterTreatments('general', this)">Salud General y Familia</button>
+      </div>
+
+      <!-- Grid de 6 Especialidades -->
+      <div class="treatments-cards-grid" id="treatmentsGrid">
+        
+        <!-- Tratamiento 1: Implantes -->
+        <div class="detail-treatment-card" data-category="implantes" id="implantes">
+          <div class="card-img-container">
+            <img 
+              src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" 
+              alt="Cirugía de implantes dentales en 1 día"
+            >
+            <span class="card-img-badge">Implantología Avanzada</span>
+          </div>
+          <div class="detail-card-body">
+            <span class="detail-badge-pill">⚡ Dientes fijos en 24 horas</span>
+            <h3>Implantología Guiada y Carga Inmediata</h3>
+            <p class="detail-description">
+              Colocamos implantes de titanio grado médico mediante cirugía guiada por ordenador 3D, permitiéndote salir con dientes fijos el mismo día de la intervención sin dolor.
+            </p>
+            <ul class="detail-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Qué incluye:</strong> TAC 3D, cirugía guiada, prótesis fija inmediata y revisiones.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Ideal para:</strong> Pérdida de 1 o más piezas, o sustitución de dentaduras postizas móviles.</span>
+              </li>
+            </ul>
+            <div class="detail-footer-btn">
+              <a href="contacto.html" class="btn btn-primary btn-block">
+                Consultar este tratamiento
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tratamiento 2: Ortodoncia -->
+        <div class="detail-treatment-card" data-category="ortodoncia" id="ortodoncia">
+          <div class="card-img-container">
+            <img 
+              src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80" 
+              alt="Alineadores transparentes invisibles"
+            >
+            <span class="card-img-badge">Ortodoncia Digital</span>
+          </div>
+          <div class="detail-card-body">
+            <span class="detail-badge-pill">✨ Alineadores 100% invisibles</span>
+            <h3>Ortodoncia Invisible con Alineadores</h3>
+            <p class="detail-description">
+              Férulas transparentes y removibles que enderezan tus dientes progresivamente. Higiénicas, cómodas para comer y cepillarte, y completamente discretas en tu día a día.
+            </p>
+            <ul class="detail-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Qué incluye:</strong> Escaneo intraoral 3D, simulación virtual de resultado y juego completo de férulas.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Ideal para:</strong> Apiñamiento, mordidas cruzadas y adultos que no quieren brackets visibles.</span>
+              </li>
+            </ul>
+            <div class="detail-footer-btn">
+              <a href="contacto.html" class="btn btn-primary btn-block">
+                Consultar este tratamiento
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tratamiento 3: Carillas -->
+        <div class="detail-treatment-card" data-category="estetica" id="estetica">
+          <div class="card-img-container">
+            <img 
+              src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" 
+              alt="Carillas de porcelana y diseño de sonrisa"
+            >
+            <span class="card-img-badge">Estética y Carillas</span>
+          </div>
+          <div class="detail-card-body">
+            <span class="detail-badge-pill">💎 Carillas cerámicas ultrafinas</span>
+            <h3>Carillas Dentales y Diseño de Sonrisa</h3>
+            <p class="detail-description">
+              Láminas de porcelana o composite de alta resistencia que corrigen forma, color, tamaño y pequeñas malposiciones dentales para lograr una sonrisa armoniosa y radiante.
+            </p>
+            <ul class="detail-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Qué incluye:</strong> Diseño digital de sonrisa (DSD), prueba previa (mockup) y fabricación en laboratorio propio.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Ideal para:</strong> Dientes desgastados, manchas que no responden al blanqueamiento o diastemas.</span>
+              </li>
+            </ul>
+            <div class="detail-footer-btn">
+              <a href="contacto.html" class="btn btn-primary btn-block">
+                Consultar este tratamiento
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tratamiento 4: Blanqueamiento -->
+        <div class="detail-treatment-card" data-category="estetica">
+          <div class="card-img-container">
+            <img 
+              src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+              alt="Blanqueamiento dental profesional con lámpara LED"
+            >
+            <span class="card-img-badge">Estética Avanzada</span>
+          </div>
+          <div class="detail-card-body">
+            <span class="detail-badge-pill">🌟 Hasta 6 tonos más blanco</span>
+            <h3>Blanqueamiento Dental LED Avanzado</h3>
+            <p class="detail-description">
+              Tratamiento combinado en clínica y casa con gel biocompatible activado por luz fría. Elimina manchas de café, tabaco o envejecimiento sin dañar el esmalte ni provocar sensibilidad.
+            </p>
+            <ul class="detail-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Qué incluye:</strong> Higiene bucal previa, sesión LED en clínica y kit de mantenimiento domiciliario.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Ideal para:</strong> Eventos especiales, bodas o rejuvenecer el tono natural de tus dientes.</span>
+              </li>
+            </ul>
+            <div class="detail-footer-btn">
+              <a href="contacto.html" class="btn btn-primary btn-block">
+                Consultar este tratamiento
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tratamiento 5: Periodoncia -->
+        <div class="detail-treatment-card" data-category="general">
+          <div class="card-img-container">
+            <img 
+              src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=800&q=80" 
+              alt="Salud de encías y periodoncia clínica"
+            >
+            <span class="card-img-badge">Salud Gingival</span>
+          </div>
+          <div class="detail-card-body">
+            <span class="detail-badge-pill">🛡️ Protección del hueso dental</span>
+            <h3>Periodoncia y Tratamiento de Encías</h3>
+            <p class="detail-description">
+              Diagnóstico bacteriano y curetajes por ultrasonidos para erradicar sarro subgingival, frenar el sangrado de encías y prevenir la movilidad o pérdida de piezas dentales.
+            </p>
+            <ul class="detail-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Qué incluye:</strong> Sondaje periodontal milimétrico, desinfección profunda y plan de mantenimiento.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Ideal para:</strong> Encías que sangran al cepillarse, mal aliento persistente o encías retraídas.</span>
+              </li>
+            </ul>
+            <div class="detail-footer-btn">
+              <a href="contacto.html" class="btn btn-primary btn-block">
+                Consultar este tratamiento
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tratamiento 6: Odontopediatría -->
+        <div class="detail-treatment-card" data-category="general">
+          <div class="card-img-container">
+            <img 
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" 
+              alt="Cuidado dental infantil y familiar"
+            >
+            <span class="card-img-badge">Odontopediatría</span>
+          </div>
+          <div class="detail-card-body">
+            <span class="detail-badge-pill">🧸 Atención empática sin miedo</span>
+            <h3>Odontopediatría y Odontología Familiar</h3>
+            <p class="detail-description">
+              Especialistas dedicados a los más pequeños en un ambiente lúdico y sin estrés. Sellado de fisuras, prevención de caries, control de recambio dentario y ortodoncia interceptiva.
+            </p>
+            <ul class="detail-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Qué incluye:</strong> Revisión del desarrollo maxilar, educación en higiene bucal y fluoraciones.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Ideal para:</strong> Niños desde los 2 años y familias que buscan un dentista de confianza de por vida.</span>
+              </li>
+            </ul>
+            <div class="detail-footer-btn">
+              <a href="contacto.html" class="btn btn-primary btn-block">
+                Consultar este tratamiento
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BANNER DE SEDACIÓN CONSCIENTE -->
+      <div class="sedation-banner" id="sedacion">
+        <img 
+          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" 
+          alt="Tranquilidad médica en clínica GoalDental" 
+          class="sedation-img"
+        >
+        <div class="sedation-content">
+          <div class="badge-clean">
+            <span class="badge-dot"></span>
+            Sin estrés, dolor ni ansiedad
+          </div>
+          <h3>¿Miedo o Fobia al Dentista? Conoce la Sedación Consciente</h3>
+          <p>
+            En CLÍNICA GOALDENTAL contamos con un médico anestesista colegiado para inducir un estado de relajación profunda y placentera mientras realizamos cualquier tratamiento. Mantendrás la respiración natural y responderás a estímulos, pero sin angustia, dolor ni percepción del paso del tiempo.
+          </p>
+          <a href="contacto.html" class="btn btn-whatsapp">
+            Solicitar Información sobre Sedación Consciente
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BANNER CTA PRE-FOOTER -->
+  <section class="cta-banner-section">
+    <div class="container cta-banner-content">
+      <h2>¿Tienes dudas sobre qué tratamiento es el adecuado para ti?</h2>
+      <p>
+        Ven a una primera visita de valoración completa con radiografía panorámica 3D sin coste ni compromiso.
+      </p>
+      <div class="cta-banner-actions">
+        <a href="contacto.html" class="btn btn-white">
+          Pedir Cita Gratuita
+        </a>
+        <a href="https://wa.me/34600000000?text=Hola,%20tengo%20dudas%20sobre%20un%20tratamiento" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white">
+          Escribir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER COMÚN -->
+  <footer>
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div class="footer-col-brand">
+          <h4>CLÍNICA GOALDENTAL <span>ODONTOSTUDIO</span></h4>
+          <p>
+            Odontología médica avanzada, implantes dentales, ortodoncia invisible y estética dental de vanguardia en Alcalá de Henares y Comunidad de Madrid.
+          </p>
+          <div class="top-bar-item" style="color: var(--primary); font-weight: 600;">
+            <span>★ 4.9/5 Calificación de Excelencia en Google</span>
+          </div>
+        </div>
+
+        <div class="footer-col-links">
+          <h5 class="footer-links-title">Navegación</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tratamientos.html">Especialidades Médicas</a></li>
+            <li><a href="contacto.html">Pide Cita Online</a></li>
+            <li><a href="#sedacion">Sedación Consciente</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-links">
+          <h5 class="footer-links-title">Horario de Atención</h5>
+          <ul class="footer-links-list">
+            <li>Lunes a Viernes: 09:00 - 20:30</li>
+            <li>Sábados: Con cita previa</li>
+            <li>Domingos: Urgencias bajo llamada</li>
+            <li>Parking gratuito para pacientes</li>
+          </ul>
+        </div>
+
+        <div class="footer-col-links">
+          <h5 class="footer-links-title">Contacto Directo</h5>
+          <ul class="footer-links-list">
+            <li><a href="tel:+34918000000">📞 918 00 00 00</a></li>
+            <li><a href="https://wa.me/34600000000">💬 WhatsApp: 600 000 000</a></li>
+            <li>📍 Vía Complutense, 45, Alcalá de Henares</li>
+            <li>✉️ info@goaldental-odontostudio.es</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="footer-copy">
+          © 2026 CLÍNICA GOALDENTAL • ODONTOSTUDIO - Todos los derechos reservados.
+        </p>
+        <div class="demo-attribution">
+          <span>Web demo médica desarrollada por</span>
+          <a href="../index.html">Slipstream Webs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT PARA FILTROS INTERACTIVOS -->
+  <script>
+    function filterTreatments(category, btn) {
+      // Manejar clase activa de los botones
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Filtrar tarjetas
+      const cards = document.querySelectorAll('.detail-treatment-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
