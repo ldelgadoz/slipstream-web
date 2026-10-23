@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carta del Restaurante & Asador Don Juan: entrantes, carnes a la brasa, pescados, postres caseros y bebidas. Precios con IVA y alérgenos indicados.">
+  <title>Carta | Restaurante & Asador Don Juan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-item">
+        <a href="../index.html" class="back-to-slipstream">← Volver a Slipstream Web's</a>
+      </div>
+      <div class="top-bar-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>Calle Mayor, 12, Alcalá de Henares</span>
+      </div>
+      <div class="top-bar-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span>Reservas: <a href="tel:+34918000000" class="top-bar-link">918 00 00 00</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Don <em>Juan</em></span>
+        <span class="brand-sub">Restaurante &amp; Asador</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="carta.html" class="nav-link active">Carta</a></li>
+        <li><a href="menu-del-dia.html" class="nav-link">Menú del día</a></li>
+        <li><a href="reservas.html" class="nav-link">Reservas</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        <li class="nav-cta-mobile"><a href="reservas.html" class="btn btn-primary btn-block">Reservar mesa</a></li>
+      </ul>
+      <a href="reservas.html" class="btn btn-primary btn-nav">Reservar mesa</a>
+    </div>
+  </header>
+
+  <!-- CABECERA -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Nuestra carta</h1>
+      <p>Brasa, mar y postres caseros. Todos los precios incluyen IVA.</p>
+    </div>
+  </section>
+
+  <!-- FILTRO DE CATEGORÍAS -->
+  <div class="menu-tabs-wrap">
+    <div class="container">
+      <div class="menu-tabs" role="group" aria-label="Categorías de la carta">
+        <button class="menu-tab active" data-filter="todo" aria-pressed="true">Todo</button>
+        <button class="menu-tab" data-filter="entrantes" aria-pressed="false">Entrantes</button>
+        <button class="menu-tab" data-filter="carnes" aria-pressed="false">Carnes a la brasa</button>
+        <button class="menu-tab" data-filter="pescados" aria-pressed="false">Pescados y mariscos</button>
+        <button class="menu-tab" data-filter="postres" aria-pressed="false">Postres</button>
+        <button class="menu-tab" data-filter="bebidas" aria-pressed="false">Bebidas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARTA -->
+  <main class="menu-section">
+    <div class="container">
+
+      <!-- ENTRANTES -->
+      <section class="menu-category" data-cat="entrantes" id="entrantes">
+        <div class="menu-category-head">
+          <h2>Entrantes</h2>
+          <span class="rule"></span>
+          <small>Para abrir boca</small>
+        </div>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Croquetas caseras de jamón ibérico</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">9,50 €</span>
+            </div>
+            <p class="menu-item-desc">Seis unidades de bechamel cremosa, fritas al momento.</p>
+            <div class="menu-item-meta">
+              <span class="badge-house">De la casa</span>
+              <span class="allergen" title="Gluten">G</span>
+              <span class="allergen" title="Lácteos">L</span>
+              <span class="allergen" title="Huevo">H</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Ensalada de tomate raf</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">12,00 €</span>
+            </div>
+            <p class="menu-item-desc">Con ventresca de atún, cebolla tierna y aceite de oliva virgen extra.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Pescado">P</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Provolone a la brasa</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">10,50 €</span>
+            </div>
+            <p class="menu-item-desc">Queso fundido sobre brasa con tomate confitado y orégano.</p>
+            <div class="menu-item-meta">
+              <span class="badge-veg">Vegetariano</span>
+              <span class="allergen" title="Lácteos">L</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Pimientos del piquillo rellenos de bacalao</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">11,50 €</span>
+            </div>
+            <p class="menu-item-desc">Con salsa suave de pimiento y un toque de ajo.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Pescado">P</span>
+              <span class="allergen" title="Lácteos">L</span>
+              <span class="allergen" title="Gluten">G</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Jamón ibérico de bellota</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">18,00 €</span>
+            </div>
+            <p class="menu-item-desc">Media ración cortada a cuchillo, con pan de cristal.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Gluten">G</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Revuelto de morcilla y piñones</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">10,90 €</span>
+            </div>
+            <p class="menu-item-desc">Con huevos camperos y morcilla de Burgos.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Huevo">H</span>
+              <span class="allergen" title="Frutos secos">F</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CARNES -->
+      <section class="menu-category" data-cat="carnes" id="carnes">
+        <div class="menu-category-head">
+          <h2>Carnes a la brasa</h2>
+          <span class="rule"></span>
+          <small>Brasa de encina</small>
+        </div>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Chuletón de vaca madurada</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">52,00 €</span>
+            </div>
+            <p class="menu-item-desc">Aproximadamente 1 kg para compartir, con pimientos asados y patatas.</p>
+            <div class="menu-item-meta">
+              <span class="badge-house">De la casa</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Cordero lechal asado</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">24,90 €</span>
+            </div>
+            <p class="menu-item-desc">Cuarto de lechal con ensalada de lechuga y cebolleta.</p>
+            <div class="menu-item-meta">
+              <span class="badge-house">De la casa</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Entrecot de ternera</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">21,50 €</span>
+            </div>
+            <p class="menu-item-desc">300 g a la brasa con sal en escamas y patatas fritas.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Solomillo de ternera</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">22,50 €</span>
+            </div>
+            <p class="menu-item-desc">Con salsa de pimienta verde y guarnición de temporada.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Lácteos">L</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Secreto ibérico</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">17,90 €</span>
+            </div>
+            <p class="menu-item-desc">A la brasa con patatas panaderas y pimiento verde.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Costillar de cerdo ibérico</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">16,90 €</span>
+            </div>
+            <p class="menu-item-desc">Cocinado a baja temperatura y glaseado con salsa barbacoa casera.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Gluten">G</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- PESCADOS -->
+      <section class="menu-category" data-cat="pescados" id="pescados">
+        <div class="menu-category-head">
+          <h2>Pescados y mariscos</h2>
+          <span class="rule"></span>
+          <small>Según mercado</small>
+        </div>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Pulpo a la brasa</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">21,00 €</span>
+            </div>
+            <p class="menu-item-desc">Con parmentier de patata y pimentón de la Vera.</p>
+            <div class="menu-item-meta">
+              <span class="badge-house">De la casa</span>
+              <span class="allergen" title="Moluscos">M</span>
+              <span class="allergen" title="Lácteos">L</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Bacalao confitado con pisto</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">19,50 €</span>
+            </div>
+            <p class="menu-item-desc">Lomo de bacalao confitado a baja temperatura sobre pisto manchego.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Pescado">P</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Lubina a la brasa</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">18,90 €</span>
+            </div>
+            <p class="menu-item-desc">Entera, con verduras a la plancha y vinagreta de ajo.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Pescado">P</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Gambones a la brasa</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">16,50 €</span>
+            </div>
+            <p class="menu-item-desc">Seis unidades con ajo y perejil.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Crustáceos">C</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- POSTRES -->
+      <section class="menu-category" data-cat="postres" id="postres">
+        <div class="menu-category-head">
+          <h2>Postres</h2>
+          <span class="rule"></span>
+          <small>Hechos en casa</small>
+        </div>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Tarta de queso al horno</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">6,00 €</span>
+            </div>
+            <p class="menu-item-desc">Cremosa y ligeramente tostada por arriba.</p>
+            <div class="menu-item-meta">
+              <span class="badge-house">De la casa</span>
+              <span class="allergen" title="Lácteos">L</span>
+              <span class="allergen" title="Gluten">G</span>
+              <span class="allergen" title="Huevo">H</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Torrija caramelizada</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">6,50 €</span>
+            </div>
+            <p class="menu-item-desc">Con helado de vainilla.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Gluten">G</span>
+              <span class="allergen" title="Lácteos">L</span>
+              <span class="allergen" title="Huevo">H</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Coulant de chocolate</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">6,50 €</span>
+            </div>
+            <p class="menu-item-desc">Corazón fundido y bola de helado de vainilla.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Gluten">G</span>
+              <span class="allergen" title="Lácteos">L</span>
+              <span class="allergen" title="Huevo">H</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Flan casero de huevo</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">4,50 €</span>
+            </div>
+            <p class="menu-item-desc">Con caramelo y nata.</p>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Lácteos">L</span>
+              <span class="allergen" title="Huevo">H</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Sorbete de limón al cava</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">5,00 €</span>
+            </div>
+            <p class="menu-item-desc">Ligero y fresco para cerrar la comida.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- BEBIDAS -->
+      <section class="menu-category" data-cat="bebidas" id="bebidas">
+        <div class="menu-category-head">
+          <h2>Bebidas</h2>
+          <span class="rule"></span>
+          <small>Vinos de la tierra</small>
+        </div>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Rioja crianza (botella)</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">19,00 €</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Ribera del Duero crianza (botella)</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">22,00 €</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Rueda verdejo (botella)</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">17,00 €</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Copa de vino de la casa</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">3,50 €</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Cerveza de barril (caña)</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">2,80 €</span>
+            </div>
+            <div class="menu-item-meta">
+              <span class="allergen" title="Gluten">G</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Refrescos</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">2,60 €</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Agua mineral</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">2,20 €</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Café o infusión</span>
+              <span class="menu-item-dots"></span>
+              <span class="menu-item-price">1,60 €</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- LEYENDA DE ALÉRGENOS -->
+      <div class="legend-box">
+        <h3>Alérgenos</h3>
+        <div class="legend-list">
+          <span><span class="allergen">G</span> Gluten</span>
+          <span><span class="allergen">C</span> Crustáceos</span>
+          <span><span class="allergen">H</span> Huevo</span>
+          <span><span class="allergen">P</span> Pescado</span>
+          <span><span class="allergen">F</span> Frutos secos</span>
+          <span><span class="allergen">L</span> Lácteos</span>
+          <span><span class="allergen">M</span> Moluscos</span>
+        </div>
+        <p class="legend-note">Si tienes alguna alergia o intolerancia, avisa a nuestro equipo antes de pedir. Precios con IVA incluido.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="container">
+      <h2>¿Ya sabes qué vas a pedir?</h2>
+      <p>Reserva tu mesa y llega con el apetito preparado.</p>
+      <a href="reservas.html" class="btn btn-primary">Reservar mesa</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Don <em>Juan</em> · Asador</h4>
+          <p>Brasa de encina, producto de mercado y cocina casera en el corazón de Alcalá de Henares.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="menu-del-dia.html">Menú del día</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Horario</h5>
+          <ul>
+            <li>Lunes: cerrado</li>
+            <li>Mar - Dom: 13:00 - 16:00</li>
+            <li>Mar - Dom: 20:00 - 23:30</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a href="tel:+34918000000">918 00 00 00</a></li>
+            <li>Calle Mayor, 12, Alcalá de Henares</li>
+            <li>info@asadordonjuan.es</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Restaurante &amp; Asador Don Juan</span>
+        <div class="demo-attribution">
+          <span>Web demo desarrollada por</span>
+          <a href="../index.html">Slipstream Webs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

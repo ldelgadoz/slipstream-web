@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurante & Asador Don Juan en Alcalá de Henares. Carne a la brasa de encina, producto de mercado y menú del día. Reserva tu mesa online.">
+  <title>Restaurante & Asador Don Juan | Brasa de encina en Alcalá de Henares</title>
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-item">
+        <a href="../index.html" class="back-to-slipstream">← Volver a Slipstream Web's</a>
+      </div>
+      <div class="top-bar-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>Calle Mayor, 12, Alcalá de Henares</span>
+      </div>
+      <div class="top-bar-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span>Reservas: <a href="tel:+34918000000" class="top-bar-link">918 00 00 00</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Don <em>Juan</em></span>
+        <span class="brand-sub">Restaurante &amp; Asador</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+        <li><a href="carta.html" class="nav-link">Carta</a></li>
+        <li><a href="menu-del-dia.html" class="nav-link">Menú del día</a></li>
+        <li><a href="reservas.html" class="nav-link">Reservas</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        <li class="nav-cta-mobile"><a href="reservas.html" class="btn btn-primary btn-block">Reservar mesa</a></li>
+      </ul>
+      <a href="reservas.html" class="btn btn-primary btn-nav">Reservar mesa</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="hero-badge">Asador en Alcalá de Henares</span>
+      <h1>Carne a la brasa de encina, <span>como se ha hecho siempre</span></h1>
+      <p class="hero-subtitle">
+        Producto de mercado, punto exacto y una carta pensada para compartir. Ven a comer, a cenar o a celebrar lo que toque.
+      </p>
+      <div class="hero-cta-group">
+        <a href="reservas.html" class="btn btn-primary">Reservar mesa</a>
+        <a href="carta.html" class="btn btn-outline">Ver la carta</a>
+      </div>
+
+      <div class="hero-facts">
+        <div class="hero-fact">
+          <strong>Brasa de encina</strong>
+          <span>Todas nuestras carnes</span>
+        </div>
+        <div class="hero-fact">
+          <strong>Menú del día</strong>
+          <span>De martes a viernes</span>
+        </div>
+        <div class="hero-fact">
+          <strong>Terraza</strong>
+          <span>Con reserva previa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ DON JUAN -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestra cocina</span>
+        <h2>Sencillo, bien hecho y a fuego lento</h2>
+        <p>Pocas cosas, pero las justas: buen género, buena brasa y tiempo.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+            </svg>
+          </div>
+          <h3>La brasa lo es todo</h3>
+          <p>Encina seleccionada y una parrilla que se enciende horas antes del servicio para cocinar sobre brasa viva, sin prisas.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </div>
+          <h3>Producto de mercado</h3>
+          <p>Compramos cada mañana lo que mejor está. Por eso algunos platos cambian con la temporada y nunca sabrán a congelado.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </div>
+          <h3>Sala y terraza</h3>
+          <p>Un comedor cálido para el invierno y una terraza para cuando aprieta el buen tiempo. Pide la que prefieras al reservar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATOS ESTRELLA -->
+  <section class="alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lo más pedido</span>
+        <h2>Platos de la casa</h2>
+        <p>Si es tu primera vez, empieza por aquí.</p>
+      </div>
+
+      <div class="signature-grid">
+        <article class="signature-card">
+          <span class="signature-tag">Para compartir</span>
+          <h3>Chuletón de vaca madurada</h3>
+          <p>Aproximadamente 1 kg, cortado en mesa y servido con pimientos asados y patatas.</p>
+          <span class="signature-price">52,00 €</span>
+        </article>
+
+        <article class="signature-card">
+          <span class="signature-tag">Especialidad</span>
+          <h3>Cordero lechal asado</h3>
+          <p>Cuarto de cordero lechal, crujiente por fuera y jugoso por dentro, con ensalada de lechuga.</p>
+          <span class="signature-price">24,90 €</span>
+        </article>
+
+        <article class="signature-card">
+          <span class="signature-tag">De la brasa</span>
+          <h3>Pulpo a la brasa</h3>
+          <p>Con parmentier de patata, pimentón de la Vera y un hilo de aceite de oliva virgen extra.</p>
+          <span class="signature-price">21,00 €</span>
+        </article>
+
+        <article class="signature-card">
+          <span class="signature-tag">Postre casero</span>
+          <h3>Tarta de queso al horno</h3>
+          <p>Cremosa, ligeramente tostada por arriba y hecha cada día en nuestra cocina.</p>
+          <span class="signature-price">6,00 €</span>
+        </article>
+      </div>
+
+      <div class="center-action">
+        <a href="carta.html" class="btn btn-outline">Ver la carta completa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ DEL DÍA -->
+  <section>
+    <div class="container">
+      <div class="daily-banner">
+        <div>
+          <span class="section-tag">De martes a viernes</span>
+          <h2>Menú del día</h2>
+          <p>Primero, segundo, postre o café, pan y bebida. Cocina casera que cambia cada día para que comer fuera entre semana no sea un lujo.</p>
+          <a href="menu-del-dia.html" class="btn btn-primary">Ver el menú del día</a>
+        </div>
+        <div class="daily-price-box">
+          <div class="price">16,90 €</div>
+          <span>IVA incluido · Solo mediodía</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIO Y UBICACIÓN -->
+  <section class="alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visítanos</span>
+        <h2>Horario y cómo llegar</h2>
+      </div>
+
+      <div class="info-split">
+        <div class="info-card">
+          <h3>Horario</h3>
+          <ul class="hours-list">
+            <li><span>Lunes</span><span class="closed">Cerrado</span></li>
+            <li><span>Martes a domingo · Comidas</span><span>13:00 - 16:00</span></li>
+            <li><span>Martes a domingo · Cenas</span><span>20:00 - 23:30</span></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Dónde estamos</h3>
+          <div class="info-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <strong>Dirección</strong>
+              <span>Calle Mayor, 12, 28801 Alcalá de Henares (Madrid)</span>
+            </div>
+          </div>
+          <div class="info-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <div>
+              <strong>Teléfono</strong>
+              <a href="tel:+34918000000">918 00 00 00</a>
+            </div>
+          </div>
+          <a href="contacto.html" class="btn btn-outline btn-block">Cómo llegar y contacto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="container">
+      <h2>¿Te guardamos una mesa?</h2>
+      <p>Reserva en menos de un minuto. Te confirmamos por teléfono o mensaje.</p>
+      <a href="reservas.html" class="btn btn-primary">Reservar mesa</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Don <em>Juan</em> · Asador</h4>
+          <p>Brasa de encina, producto de mercado y cocina casera en el corazón de Alcalá de Henares.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="menu-del-dia.html">Menú del día</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Horario</h5>
+          <ul>
+            <li>Lunes: cerrado</li>
+            <li>Mar - Dom: 13:00 - 16:00</li>
+            <li>Mar - Dom: 20:00 - 23:30</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a href="tel:+34918000000">918 00 00 00</a></li>
+            <li>Calle Mayor, 12, Alcalá de Henares</li>
+            <li>info@asadordonjuan.es</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Restaurante &amp; Asador Don Juan</span>
+        <div class="demo-attribution">
+          <span>Web demo desarrollada por</span>
+          <a href="../index.html">Slipstream Webs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

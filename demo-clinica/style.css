@@ -852,6 +852,85 @@ footer {
   color: #5b21b6;
 }
 
+/* FOOTER MULTIPÁGINA (COLUMNAS CENTRADAS SIN LISTAS) */
+.footer-columns-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  gap: 36px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.footer-col-brand h4 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.footer-col-brand h4 span {
+  color: var(--primary);
+}
+
+.footer-col-brand p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.footer-col-links {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.footer-links-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-links-group a,
+.footer-links-group span,
+.footer-links-group p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  display: block;
+  transition: var(--transition);
+}
+
+.footer-links-group a:hover {
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid var(--border-light);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 960px) {
   .tech-split {
@@ -862,6 +941,11 @@ footer {
   .contact-container {
     grid-template-columns: 1fr;
     padding: 32px 24px;
+  }
+
+  .footer-columns-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 }
 
@@ -902,5 +986,20 @@ footer {
   
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .footer-columns-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .footer-col-brand {
+    text-align: center;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
   }
 }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú del día (16,90 €) de martes a viernes y menú de fin de semana (28,50 €) en el Restaurante & Asador Don Juan de Alcalá de Henares.">
+  <title>Menú del día | Restaurante & Asador Don Juan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-item">
+        <a href="../index.html" class="back-to-slipstream">← Volver a Slipstream Web's</a>
+      </div>
+      <div class="top-bar-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>Calle Mayor, 12, Alcalá de Henares</span>
+      </div>
+      <div class="top-bar-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span>Reservas: <a href="tel:+34918000000" class="top-bar-link">918 00 00 00</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Don <em>Juan</em></span>
+        <span class="brand-sub">Restaurante &amp; Asador</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="carta.html" class="nav-link">Carta</a></li>
+        <li><a href="menu-del-dia.html" class="nav-link active">Menú del día</a></li>
+        <li><a href="reservas.html" class="nav-link">Reservas</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        <li class="nav-cta-mobile"><a href="reservas.html" class="btn btn-primary btn-block">Reservar mesa</a></li>
+      </ul>
+      <a href="reservas.html" class="btn btn-primary btn-nav">Reservar mesa</a>
+    </div>
+  </header>
+
+  <!-- CABECERA -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Menú del día</h1>
+      <p>Cocina casera a buen precio entre semana y un menú más completo para el fin de semana.</p>
+    </div>
+  </section>
+
+  <!-- MENÚS -->
+  <section>
+    <div class="container">
+      <div class="daily-grid">
+
+        <!-- MENÚ DEL DÍA -->
+        <article class="daily-card featured">
+          <div class="daily-card-head">
+            <span class="when">Martes a viernes · Mediodía</span>
+            <h2>Menú del día</h2>
+            <div class="price">16,90 € <small>IVA incl.</small></div>
+          </div>
+
+          <div class="course">
+            <h3>Primeros a elegir</h3>
+            <ul>
+              <li>Lentejas estofadas con chorizo</li>
+              <li>Sopa castellana</li>
+              <li>Ensalada mixta con ventresca</li>
+              <li>Judías verdes con jamón</li>
+            </ul>
+          </div>
+
+          <div class="course">
+            <h3>Segundos a elegir</h3>
+            <ul>
+              <li>Merluza a la plancha con ensalada</li>
+              <li>Pollo asado de corral con patatas</li>
+              <li>Cinta de lomo a la brasa con pimientos</li>
+              <li>Albóndigas en salsa casera</li>
+            </ul>
+          </div>
+
+          <div class="course">
+            <h3>Postre o café</h3>
+            <ul>
+              <li>Flan casero · Fruta de temporada · Yogur · Café</li>
+            </ul>
+          </div>
+
+          <p class="daily-note">Incluye pan y bebida (agua, cerveza, refresco o copa de vino de la casa).</p>
+        </article>
+
+        <!-- MENÚ FIN DE SEMANA -->
+        <article class="daily-card">
+          <div class="daily-card-head">
+            <span class="when">Sábados y domingos · Mediodía</span>
+            <h2>Menú de fin de semana</h2>
+            <div class="price">28,50 € <small>IVA incl.</small></div>
+          </div>
+
+          <div class="course">
+            <h3>Para compartir en mesa</h3>
+            <ul>
+              <li>Croquetas caseras de jamón ibérico</li>
+              <li>Ensalada de tomate raf con ventresca</li>
+              <li>Provolone a la brasa</li>
+            </ul>
+          </div>
+
+          <div class="course">
+            <h3>Principal a elegir</h3>
+            <ul>
+              <li>Entrecot de ternera a la brasa <small>(300 g)</small></li>
+              <li>Secreto ibérico con patatas panaderas</li>
+              <li>Lubina a la brasa con verduras</li>
+              <li>Costillar de cerdo ibérico glaseado</li>
+            </ul>
+          </div>
+
+          <div class="course">
+            <h3>Postre y café</h3>
+            <ul>
+              <li>Tarta de queso · Torrija caramelizada · Sorbete de limón al cava</li>
+            </ul>
+          </div>
+
+          <p class="daily-note">Incluye pan, bebida y café. Recomendamos reservar con antelación.</p>
+        </article>
+
+      </div>
+
+      <p class="daily-footnote">
+        Los platos pueden variar según mercado. Si tienes alguna alergia o intolerancia, avisa a nuestro equipo antes de pedir. Los menús no están disponibles en horario de cena.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="container">
+      <h2>Reserva tu mesa para comer</h2>
+      <p>Entre semana y en fin de semana se llena pronto. Asegura tu sitio.</p>
+      <a href="reservas.html" class="btn btn-primary">Reservar mesa</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Don <em>Juan</em> · Asador</h4>
+          <p>Brasa de encina, producto de mercado y cocina casera en el corazón de Alcalá de Henares.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="menu-del-dia.html">Menú del día</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Horario</h5>
+          <ul>
+            <li>Lunes: cerrado</li>
+            <li>Mar - Dom: 13:00 - 16:00</li>
+            <li>Mar - Dom: 20:00 - 23:30</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a href="tel:+34918000000">918 00 00 00</a></li>
+            <li>Calle Mayor, 12, Alcalá de Henares</li>
+            <li>info@asadordonjuan.es</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Restaurante &amp; Asador Don Juan</span>
+        <div class="demo-attribution">
+          <span>Web demo desarrollada por</span>
+          <a href="../index.html">Slipstream Webs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
