@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080a">
+  <meta name="description" content="Motorsport Garage, taller mecánico en Alcalá de Henares. Mantenimiento sin perder la garantía, diagnosis electrónica y presupuesto cerrado antes de tocar el coche.">
+  <title>Motorsport Garage | Taller mecánico en Alcalá de Henares (v2)</title>
+
+  <!-- Activa los estados de animación solo si hay JavaScript -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Google Fonts: Unbounded + Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#servicios" class="skip-link">Saltar al contenido</a>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Motorsport Garage, inicio">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Motorsport <b>Garage</b></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#cita">Contacto</a>
+        <a href="#cita" class="btn btn-copper btn-sm magnetic">Pedir cita</a>
+      </nav>
+      <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicios" class="mm" style="--i:0"><small>01</small>Servicios</a>
+    <a href="#proceso" class="mm" style="--i:1"><small>02</small>Proceso</a>
+    <a href="#cita" class="mm" style="--i:2"><small>03</small>Cita previa</a>
+    <p class="mm-foot">Urgencias y asistencia: <a href="tel:+34918000000">918 000 000</a></p>
+  </div>
+
+  <a href="../index.html" class="back-pill">← Volver a Slipstream Web's</a>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="glow"></div>
+        <div class="streaks">
+          <span style="--t:18%;--w:42vw;--s:5.5s;--d:0s"></span>
+          <span style="--t:27%;--w:26vw;--s:7s;--d:1.4s"></span>
+          <span style="--t:36%;--w:55vw;--s:6s;--d:0.6s"></span>
+          <span style="--t:48%;--w:30vw;--s:8s;--d:2.8s"></span>
+          <span style="--t:57%;--w:48vw;--s:5s;--d:3.4s"></span>
+          <span style="--t:66%;--w:22vw;--s:6.6s;--d:0.9s"></span>
+          <span style="--t:74%;--w:38vw;--s:7.4s;--d:4.2s"></span>
+          <span style="--t:83%;--w:50vw;--s:5.8s;--d:2s"></span>
+        </div>
+        <div class="ghost-word" id="ghost">Motorsport</div>
+      </div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow">Taller mecánico · Alcalá de Henares</p>
+        <h1 class="split" aria-label="Mecánica con carácter, precio cerrado">
+          <span class="line" style="--i:0"><span>Mecánica</span></span>
+          <span class="line" style="--i:1"><span>con <em class="grad">carácter</em></span></span>
+          <span class="line" style="--i:2"><span>precio cerrado</span></span>
+        </h1>
+        <p class="lead">
+          Mantenimiento sin perder la garantía del fabricante, diagnosis con equipos de última generación y un presupuesto por escrito antes de tocar tu coche.
+        </p>
+        <div class="hero-cta">
+          <a href="#cita" class="btn btn-copper magnetic">
+            Pedir cita previa
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#servicios" class="btn btn-ghost magnetic">Ver servicios</a>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><i></i><span>Scroll</span></div>
+
+      <div class="hero-meta" aria-label="Datos clave">
+        <div><strong>24 h</strong>Diagnóstico</div>
+        <div><strong>0 €</strong>Sorpresas</div>
+        <div><strong>OEM</strong>Recambios</div>
+      </div>
+    </section>
+
+    <!-- MARQUESINA -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Mantenimiento oficial</span><i></i><span>Diagnosis electrónica</span><i></i><span>Frenos</span><i></i><span>Neumáticos</span><i></i><span>Climatización</span><i></i><span>Pre-ITV</span><i></i>
+        </div>
+        <div class="marquee-group">
+          <span>Mantenimiento oficial</span><i></i><span>Diagnosis electrónica</span><i></i><span>Frenos</span><i></i><span>Neumáticos</span><i></i><span>Climatización</span><i></i><span>Pre-ITV</span><i></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICIOS (scroll horizontal anclado en escritorio) -->
+    <section class="services" id="servicios">
+      <div class="pin">
+        <div class="container services-head">
+          <div>
+            <p class="eyebrow">Qué hacemos</p>
+            <h2>Todo lo que<br>necesita tu coche</h2>
+          </div>
+          <p class="svc-counter" aria-hidden="true"><b id="svcCount">01</b> / 05</p>
+        </div>
+
+        <div class="track" id="track">
+          <article class="card">
+            <div class="card-top">
+              <span class="card-num">01</span>
+              <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
+            </div>
+            <h3>Mantenimiento oficial</h3>
+            <p>Revisiones según el plan del fabricante con recambios certificados, para que tu garantía siga intacta.</p>
+            <div class="card-foot"><span>Revisión desde</span><b>89 €</b></div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="card-num">02</span>
+              <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></span>
+            </div>
+            <h3>Diagnosis electrónica</h3>
+            <p>Lectura de centralitas y localización exacta de la avería. Te enseñamos el informe, sin adivinar.</p>
+            <div class="card-foot"><span>Informe en</span><b>24 h</b></div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="card-num">03</span>
+              <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></span>
+            </div>
+            <h3>Frenos y neumáticos</h3>
+            <p>Pastillas, discos, equilibrado y alineación. Lo que más importa cuando toca frenar.</p>
+            <div class="card-foot"><span>Eje completo desde</span><b>119 €</b></div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="card-num">04</span>
+              <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.9" y1="4.9" x2="19.1" y2="19.1"/><line x1="19.1" y1="4.9" x2="4.9" y2="19.1"/></svg></span>
+            </div>
+            <h3>Climatización</h3>
+            <p>Recarga, limpieza de conductos y cambio de filtro de habitáculo. Aire fresco en verano, cristales claros en invierno.</p>
+            <div class="card-foot"><span>Recarga desde</span><b>59 €</b></div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="card-num">05</span>
+              <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+            </div>
+            <h3>Pre-ITV y puesta a punto</h3>
+            <p>Revisamos todo lo que mira la inspección antes de que pases por ella. Pasa a la primera.</p>
+            <div class="card-foot"><span>Revisión por</span><b>35 €</b></div>
+          </article>
+        </div>
+
+        <div class="svc-progress" aria-hidden="true"><span id="svcBar"></span></div>
+      </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="stats" aria-label="Datos clave del taller">
+      <div class="container stats-grid">
+        <div class="stat reveal" style="--d:0">
+          <div class="stat-num"><span data-count="12500" data-dec="0">12.500</span><sup>+</sup></div>
+          <p>Vehículos atendidos</p>
+        </div>
+        <div class="stat reveal" style="--d:1">
+          <div class="stat-num"><span data-count="4.9" data-dec="1">4,9</span><sup>/5</sup></div>
+          <p>Valoración media</p>
+        </div>
+        <div class="stat reveal" style="--d:2">
+          <div class="stat-num"><span data-count="24" data-dec="0">24</span><sup>h</sup></div>
+          <p>Informe de diagnosis</p>
+        </div>
+        <div class="stat reveal" style="--d:3">
+          <div class="stat-num"><span data-count="0" data-dec="0">0</span><sup>€</sup></div>
+          <p>Sorpresas en factura</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="process" id="proceso">
+      <div class="container process-grid">
+        <div class="process-sticky reveal">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2>Sin letra pequeña</h2>
+          <p>Cuatro pasos claros. Tú decides en cada uno y nada se hace sin tu visto bueno.</p>
+          <div class="big-step" id="bigStep" data-n="0" aria-hidden="true">01</div>
+        </div>
+
+        <ol class="steps" id="steps">
+          <li class="step">
+            <h3>Pides cita</h3>
+            <p>Por la web, por teléfono o por WhatsApp. Eliges día y franja, y te confirmamos en menos de dos horas.</p>
+            <span class="tag">2 min</span>
+          </li>
+          <li class="step">
+            <h3>Diagnosticamos</h3>
+            <p>Revisión completa y lectura de centralitas. Te mandamos fotos y un informe con lo que hay y lo que no hace falta tocar.</p>
+            <span class="tag">24 h</span>
+          </li>
+          <li class="step">
+            <h3>Presupuesto cerrado</h3>
+            <p>Un precio por escrito, con mano de obra y recambios desglosados. Si no te encaja, no pagas la diagnosis.</p>
+            <span class="tag">Sin sorpresas</span>
+          </li>
+          <li class="step">
+            <h3>Entrega y garantía</h3>
+            <p>Te devolvemos el coche revisado, con las piezas antiguas si las quieres y garantía por escrito de la reparación.</p>
+            <span class="tag">Garantía escrita</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CITA -->
+    <section class="booking" id="cita">
+      <div class="container booking-grid">
+        <div class="booking-info reveal">
+          <p class="eyebrow">Cita previa</p>
+          <h2>Reserva tu hueco</h2>
+          <p>Cuéntanos qué le pasa a tu coche y cuándo te viene bien. Te confirmamos día y hora enseguida.</p>
+
+          <div class="info-list">
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><small>Taller</small><span>Calle de la Industria, 8<br>28806 Alcalá de Henares</span></div>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div><small>Horario</small><span>L-V 8:30 - 19:00<br>Sábados 9:00 - 13:30</span></div>
+            </div>
+            <div class="info-row">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div><small>Teléfono</small><a href="tel:+34918000000">918 000 000</a></div>
+            </div>
+          </div>
+
+          <a class="btn btn-ghost wa magnetic" href="https://wa.me/34600000000?text=Hola,%20quisiera%20pedir%20cita%20en%20Motorsport%20Garage" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+        </div>
+
+        <div class="form-card reveal" style="--d:2" id="formCard">
+          <form id="citaForm" novalidate>
+            <h3>Solicitar cita</h3>
+            <p class="form-lead">Sin compromiso. Solo usaremos tus datos para contactarte.</p>
+
+            <fieldset>
+              <legend>¿Qué necesitas?</legend>
+              <div class="chips">
+                <label class="chip"><input type="checkbox" name="servicio" value="mantenimiento"><span>Mantenimiento</span></label>
+                <label class="chip"><input type="checkbox" name="servicio" value="diagnosis"><span>Diagnosis</span></label>
+                <label class="chip"><input type="checkbox" name="servicio" value="frenos"><span>Frenos / neumáticos</span></label>
+                <label class="chip"><input type="checkbox" name="servicio" value="clima"><span>Climatización</span></label>
+                <label class="chip"><input type="checkbox" name="servicio" value="itv"><span>Pre-ITV</span></label>
+                <label class="chip"><input type="checkbox" name="servicio" value="otro"><span>Otro</span></label>
+              </div>
+            </fieldset>
+
+            <div class="row">
+              <div class="field">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              </div>
+              <div class="field">
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="612 345 678" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="vehiculo">Vehículo</label>
+                <input type="text" id="vehiculo" name="vehiculo" placeholder="Marca, modelo y año">
+              </div>
+              <div class="field">
+                <label for="fecha">Día preferido *</label>
+                <input type="date" id="fecha" name="fecha" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="mensaje">¿Qué le pasa?</label>
+              <textarea id="mensaje" name="mensaje" rows="3" placeholder="Ruidos, testigos encendidos, revisión..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-copper btn-block">Enviar solicitud</button>
+            <p class="form-hint">Domingos cerrado. Te contestamos en menos de 2 horas laborables.</p>
+          </form>
+
+          <div class="success" id="success" role="status">
+            <svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l8 8 14-16"/></svg>
+            <h3>¡Solicitud recibida!</h3>
+            <p>Te llamaremos en menos de dos horas laborables para confirmar el día y la hora.</p>
+            <button type="button" class="btn btn-ghost" id="again">Nueva solicitud</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-big">Motorsport<br><b>Garage</b></div>
+        <a href="#cita" class="btn btn-copper magnetic">Pedir cita</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Motorsport Garage · Alcalá de Henares</span>
+        <div class="demo-attr"><span>Web demo desarrollada por</span><a href="../index.html">Slipstream Webs</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
