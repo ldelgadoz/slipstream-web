@@ -3,319 +3,456 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0b0d">
   <meta name="description" content="Taller mecánico de alta gama en Alcalá de Henares. Diagnosis avanzada, mantenimiento oficial sin perder la garantía del fabricante y presupuestos cerrados.">
   <title>MOTORSPORT GARAGE | Taller Mecánico Especializado en Alcalá de Henares</title>
-  
-  <!-- Google Fonts: Inter -->
+
+  <!-- Activa los estados de animación solo si hay JavaScript -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Google Fonts: Barlow Condensed + Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <!-- Estilos Locales -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- TOP BANNER DE INFORMACIÓN -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-item">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-          <circle cx="12" cy="10" r="3"></circle>
-        </svg>
-        <span><strong>Ubicación:</strong> Vía Complutense, 120, Alcalá de Henares (Madrid)</span>
-      </div>
-      <div class="top-bar-item">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-        </svg>
-        <span><strong>Urgencias y Asistencia:</strong> 918 000 000 / 600 000 000</span>
-      </div>
-    </div>
-  </div>
+  <a href="#servicios" class="skip-link">Saltar al contenido</a>
 
-  <!-- NAVEGACIÓN -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <a href="#" class="brand-logo">
-        <div class="brand-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-          </svg>
-        </div>
-        <span>MOTORSPORT</span>&nbsp;GARAGE
+  <!-- BARRA DE PROGRESO DE SCROLL -->
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Motorsport Garage, inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        <span><b>Motorsport</b> Garage</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#garantia">Garantía</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <a href="#contacto" class="btn btn-primary btn-nav">Pedir Cita</a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#garantia">Garantía</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="btn btn-accent btn-sm header-cta">Pedir cita</a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="badge">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"></polyline>
-        </svg>
-        Taller Mecánico Especializado en Alcalá de Henares
-      </div>
-      <h1>Tu vehículo en manos de profesionales. <span>Sin costes ocultos</span></h1>
-      <p>
-        Mantenimiento integral, diagnóstico con tecnología punta y recambios certificados OEM. Te entregamos un presupuesto cerrado y detallado antes de iniciar cualquier reparación.
-      </p>
+  <!-- MENÚ MÓVIL -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicios" class="mm-link" style="--i:0"><small>01</small>Servicios</a>
+    <a href="#proceso" class="mm-link" style="--i:1"><small>02</small>Proceso</a>
+    <a href="#garantia" class="mm-link" style="--i:2"><small>03</small>Garantía</a>
+    <a href="#contacto" class="mm-link" style="--i:3"><small>04</small>Contacto</a>
+    <p class="mm-foot">Urgencias y asistencia: <a href="tel:+34918000000">918 000 000</a></p>
+  </div>
 
-      <div class="hero-cta-group">
-        <a href="#contacto" class="btn btn-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-grid-lines"></span>
+        <span class="speed-lines"></span>
+        <span class="hero-outline">Motorsport</span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span>Taller mecánico especializado en Alcalá de Henares</p>
+
+          <h1 class="hero-title">
+            <span class="line" style="--i:0"><span>Tu vehículo en manos</span></span>
+            <span class="line" style="--i:1"><span>de <em>profesionales.</em></span></span>
+            <span class="line sweep" style="--i:2"><span>Sin costes ocultos</span></span>
+          </h1>
+
+          <p class="hero-lead">
+            Mantenimiento integral, diagnóstico con tecnología punta y recambios certificados OEM. Te entregamos un presupuesto cerrado y detallado antes de iniciar cualquier reparación.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contacto" class="btn btn-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              Reservar cita previa
+            </a>
+            <a href="https://wa.me/34600000000?text=Hola%20Motorsport%20Garage,%20necesito%20informaci%C3%B3n%20para%20mi%20coche" target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              WhatsApp directo
+            </a>
+          </div>
+
+          <ul class="hero-meta">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Vía Complutense, 120, Alcalá de Henares</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span><strong>Urgencias y asistencia:</strong> 918 000 000 / 600 000 000</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cuentarrevoluciones animado (reacciona al scroll) -->
+        <div class="hero-gauge" aria-hidden="true">
+          <svg class="gauge-svg" id="gauge" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <circle class="g-face" cx="200" cy="200" r="196"></circle>
+            <circle class="g-ring" cx="200" cy="200" r="183"></circle>
+            <!-- Zona roja (6,5 - 8) -->
+            <path class="g-red" d="M382.12 182.06 A183 183 0 0 1 329.41 329.41"></path>
+            <!-- Arco de progreso -->
+            <path class="g-track" d="M86.86 313.14 A160 160 0 1 1 313.14 313.14" style="opacity:.55"></path>
+            <path class="g-arc" id="gaugeArc" d="M86.86 313.14 A160 160 0 1 1 313.14 313.14"></path>
+            <g id="gaugeTicks"></g>
+            <text class="g-brand" x="200" y="122">MOTORSPORT</text>
+            <text class="g-value" id="rpmValue" x="200" y="282">0.0</text>
+            <text class="g-unit" x="200" y="308">x1000 r/min</text>
+            <g id="needle" transform="rotate(-135 200 200)">
+              <line class="g-needle" x1="200" y1="214" x2="200" y2="52"></line>
+            </g>
+            <circle class="g-hub" cx="200" cy="200" r="13"></circle>
           </svg>
-          Reservar Cita Previa
-        </a>
-        <a href="https://wa.me/34600000000?text=Hola%20Motorsport%20Garage,%20necesito%20informaci%C3%B3n%20para%20mi%20coche" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-          </svg>
-          WhatsApp Directo
-        </a>
-      </div>
-
-      <!-- ESTADÍSTICAS CLAVE -->
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num">+15 Años</span>
-          <span class="stat-label">Experiencia en mecánica avanzada</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">100% OEM</span>
-          <span class="stat-label">Recambios y piezas originales</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">1 Año</span>
-          <span class="stat-label">Garantía completa en mano de obra</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- SERVICIOS -->
-  <section id="servicios">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Especialidades Mecánicas</span>
-        <h2>Servicios Profesionales</h2>
-        <p>Equipamiento de última generación y mecánicos titulados para el cuidado de tu vehículo.</p>
-      </div>
+      <a href="#servicios" class="scroll-cue" aria-label="Bajar a servicios">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </section>
 
-      <div class="services-grid">
-        <!-- Servicio 1 -->
-        <div class="card">
-          <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
-              <polyline points="7 10 10 13 17 6"></polyline>
-            </svg>
-          </div>
-          <h3>Diagnosis Electrónica</h3>
-          <p>
-            Lectura avanzada de centralitas con equipos oficiales multimarca (Bosch / Launch). Detección exacta de fallos de motor, inyección y sensores.
-          </p>
-        </div>
-
-        <!-- Servicio 2 -->
-        <div class="card">
-          <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-            </svg>
-          </div>
-          <h3>Mantenimiento y Revisiones</h3>
-          <p>
-            Cambio de aceite homologado, sustitución de todos los filtros, comprobación de 50 puntos de seguridad y sellado del libro oficial.
-          </p>
-        </div>
-
-        <!-- Servicio 3 -->
-        <div class="card">
-          <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <circle cx="12" cy="12" r="4"></circle>
-              <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
-              <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
-              <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
-              <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
-            </svg>
-          </div>
-          <h3>Frenos y Neumáticos</h3>
-          <p>
-            Sustitución de pastillas y discos de alto rendimiento, sustitución y purgado de líquido de frenos, montaje, equilibrado y alineación 3D.
-          </p>
-        </div>
-
-        <!-- Servicio 4 -->
-        <div class="card">
-          <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"></circle>
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-            </svg>
-          </div>
-          <h3>Distribución y Embrague</h3>
-          <p>
-            Kits completos de distribución con bomba de agua. Embragues convencionales y bimasa con calibración milimétrica para máxima durabilidad.
-          </p>
-        </div>
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Diagnosis electrónica</span><i></i>
+        <span>Mantenimiento oficial</span><i></i>
+        <span>Frenos y neumáticos</span><i></i>
+        <span>Distribución y embrague</span><i></i>
+        <span>Presupuesto cerrado</span><i></i>
+        <span>Recambios OEM</span><i></i>
+        <span>Diagnosis electrónica</span><i></i>
+        <span>Mantenimiento oficial</span><i></i>
+        <span>Frenos y neumáticos</span><i></i>
+        <span>Distribución y embrague</span><i></i>
+        <span>Presupuesto cerrado</span><i></i>
+        <span>Recambios OEM</span><i></i>
       </div>
     </div>
-  </section>
 
-  <!-- GARANTÍA / COMPROMISO -->
-  <section id="garantia" class="garantia-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Compromiso Motorsport</span>
-        <h2>¿Por qué confiar en nosotros?</h2>
-        <p>Trabajamos bajo los máximos estándares de calidad del sector de la automoción.</p>
-      </div>
-
-      <div class="garantia-grid">
-        <!-- Garantía 1 -->
-        <div class="garantia-card">
-          <div class="garantia-badge-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="1" x2="12" y2="23"></line>
-              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-            </svg>
-          </div>
-          <div>
-            <h4>Presupuesto cerrado sin sorpresas</h4>
-            <p>Conocerás el importe exacto antes de comenzar la reparación. Cualquier imprevisto se consulta y autoriza previamente.</p>
-          </div>
+    <!-- ESTADÍSTICAS -->
+    <section class="stats" aria-label="Datos clave del taller">
+      <div class="container stats-grid">
+        <div class="stat reveal" style="--d:0">
+          <div class="stat-num"><span data-count="15" data-prefix="+">+15</span></div>
+          <div class="stat-label">Años de experiencia en mecánica avanzada</div>
         </div>
-
-        <!-- Garantía 2 -->
-        <div class="garantia-card">
-          <div class="garantia-badge-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-          </div>
-          <div>
-            <h4>Rapidez de entrega garantizada</h4>
-            <p>Cumplimos con rigor los plazos fijados de recepción y entrega de tu vehículo para que no pares tu rutina.</p>
-          </div>
+        <div class="stat reveal" style="--d:1">
+          <div class="stat-num"><span data-count="100" data-suffix="%">100%</span></div>
+          <div class="stat-label">Recambios y piezas originales OEM</div>
         </div>
-
-        <!-- Garantía 3 -->
-        <div class="garantia-card">
-          <div class="garantia-badge-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              <polyline points="9 12 11 14 15 10"></polyline>
-            </svg>
-          </div>
-          <div>
-            <h4>Garantía legal oficial intacta</h4>
-            <p>Realiza el mantenimiento de tu coche nuevo con nosotros sin perder la garantía del fabricante (Reglamento UE 461/2010).</p>
-          </div>
+        <div class="stat reveal" style="--d:2">
+          <div class="stat-num"><span data-count="1" data-suffix=" año">1 año</span></div>
+          <div class="stat-label">Garantía completa en mano de obra</div>
+        </div>
+        <div class="stat reveal" style="--d:3">
+          <div class="stat-num"><span data-count="50">50</span></div>
+          <div class="stat-label">Puntos de seguridad comprobados en cada revisión</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACTO / SOLICITUD DE CITA -->
-  <section id="contacto">
-    <div class="container">
-      <div class="contact-container">
-        
-        <!-- Columna Izquierda: Información -->
-        <div class="contact-info">
-          <span class="section-tag">Contacto y Cita Previa</span>
-          <h2>Visítanos en Alcalá de Henares</h2>
-          <p class="lead">
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios" style="padding-top:0">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Especialidades mecánicas</p>
+          <h2>Servicios profesionales</h2>
+          <p>Equipamiento de última generación y mecánicos titulados para el cuidado de tu vehículo.</p>
+        </header>
+
+        <div class="service-list" id="serviceList">
+
+          <article class="service is-open reveal">
+            <button class="service-head" type="button" id="svc1-btn" aria-expanded="true" aria-controls="svc1">
+              <span class="service-num">01</span>
+              <span class="service-title">Diagnosis electrónica</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                  <polyline points="7 10 10 13 17 6"></polyline>
+                </svg>
+              </span>
+              <span class="service-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </span>
+            </button>
+            <div class="service-body" id="svc1" role="region" aria-labelledby="svc1-btn">
+              <div><p>Lectura avanzada de centralitas con equipos oficiales multimarca (Bosch / Launch). Detección exacta de fallos de motor, inyección y sensores.</p></div>
+            </div>
+          </article>
+
+          <article class="service reveal" style="--d:1">
+            <button class="service-head" type="button" id="svc2-btn" aria-expanded="false" aria-controls="svc2">
+              <span class="service-num">02</span>
+              <span class="service-title">Mantenimiento y revisiones</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </span>
+              <span class="service-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </span>
+            </button>
+            <div class="service-body" id="svc2" role="region" aria-labelledby="svc2-btn">
+              <div><p>Cambio de aceite homologado, sustitución de todos los filtros, comprobación de 50 puntos de seguridad y sellado del libro oficial.</p></div>
+            </div>
+          </article>
+
+          <article class="service reveal" style="--d:2">
+            <button class="service-head" type="button" id="svc3-btn" aria-expanded="false" aria-controls="svc3">
+              <span class="service-num">03</span>
+              <span class="service-title">Frenos y neumáticos</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                  <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                  <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                  <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+                </svg>
+              </span>
+              <span class="service-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </span>
+            </button>
+            <div class="service-body" id="svc3" role="region" aria-labelledby="svc3-btn">
+              <div><p>Sustitución de pastillas y discos de alto rendimiento, sustitución y purgado de líquido de frenos, montaje, equilibrado y alineación 3D.</p></div>
+            </div>
+          </article>
+
+          <article class="service reveal" style="--d:3">
+            <button class="service-head" type="button" id="svc4-btn" aria-expanded="false" aria-controls="svc4">
+              <span class="service-num">04</span>
+              <span class="service-title">Distribución y embrague</span>
+              <span class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </span>
+              <span class="service-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </span>
+            </button>
+            <div class="service-body" id="svc4" role="region" aria-labelledby="svc4-btn">
+              <div><p>Kits completos de distribución con bomba de agua. Embragues convencionales y bimasa con calibración milimétrica para máxima durabilidad.</p></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="section process" id="proceso">
+      <div class="container process-grid">
+        <header class="section-head sticky-head reveal">
+          <p class="kicker">Cómo trabajamos</p>
+          <h2>De la recepción a la entrega</h2>
+          <p>Un proceso claro, sin letra pequeña y con el precio cerrado desde el primer día.</p>
+        </header>
+
+        <ol class="steps" id="steps">
+          <li class="step">
+            <span class="step-dot" aria-hidden="true"></span>
+            <span class="step-num">01</span>
+            <h3>Recepción y diagnosis</h3>
+            <p>Escuchamos qué le pasa a tu coche y lo revisamos con equipos oficiales multimarca para localizar el fallo exacto.</p>
+          </li>
+          <li class="step">
+            <span class="step-dot" aria-hidden="true"></span>
+            <span class="step-num">02</span>
+            <h3>Presupuesto cerrado</h3>
+            <p>Conocerás el importe exacto antes de empezar. Cualquier imprevisto se consulta y autoriza previamente.</p>
+          </li>
+          <li class="step">
+            <span class="step-dot" aria-hidden="true"></span>
+            <span class="step-num">03</span>
+            <h3>Reparación con piezas OEM</h3>
+            <p>Mecánicos titulados y recambios certificados originales, con la calibración que pide cada intervención.</p>
+          </li>
+          <li class="step">
+            <span class="step-dot" aria-hidden="true"></span>
+            <span class="step-num">04</span>
+            <h3>Entrega y garantía</h3>
+            <p>Cumplimos los plazos acordados y tu reparación sale con 1 año de garantía en mano de obra.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- GARANTÍA / COMPROMISO -->
+    <section class="section" id="garantia">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Compromiso Motorsport</p>
+          <h2>¿Por qué confiar en nosotros?</h2>
+          <p>Trabajamos bajo los máximos estándares de calidad del sector de la automoción.</p>
+        </header>
+
+        <div class="trust-grid">
+          <div class="reveal" style="--d:0">
+            <article class="trust-card tilt">
+              <span class="trust-index" aria-hidden="true">01</span>
+              <span class="trust-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </span>
+              <h3>Presupuesto cerrado sin sorpresas</h3>
+              <p>Conocerás el importe exacto antes de comenzar la reparación. Cualquier imprevisto se consulta y autoriza previamente.</p>
+            </article>
+          </div>
+
+          <div class="reveal" style="--d:1">
+            <article class="trust-card tilt">
+              <span class="trust-index" aria-hidden="true">02</span>
+              <span class="trust-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </span>
+              <h3>Rapidez de entrega garantizada</h3>
+              <p>Cumplimos con rigor los plazos fijados de recepción y entrega de tu vehículo para que no pares tu rutina.</p>
+            </article>
+          </div>
+
+          <div class="reveal" style="--d:2">
+            <article class="trust-card tilt">
+              <span class="trust-index" aria-hidden="true">03</span>
+              <span class="trust-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </span>
+              <h3>Garantía legal oficial intacta</h3>
+              <p>Realiza el mantenimiento de tu coche nuevo con nosotros sin perder la garantía del fabricante (Reglamento UE 461/2010).</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO / CITA PREVIA -->
+    <section class="section contact" id="contacto">
+      <div class="container contact-grid">
+
+        <div class="reveal">
+          <header class="section-head" style="margin-bottom:28px">
+            <p class="kicker">Contacto y cita previa</p>
+            <h2>Visítanos en Alcalá de Henares</h2>
+          </header>
+          <p class="contact-lead">
             Solicita tu cita previa o acércate a nuestras instalaciones para una revisión sin compromiso. Disponemos de vehículo de cortesía bajo disponibilidad.
           </p>
 
-          <div class="info-cards">
+          <div class="info-list">
             <div class="info-item">
-              <div class="info-icon">
+              <span class="info-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-              </div>
-              <div class="info-text">
-                <strong>Dirección del Taller</strong>
+              </span>
+              <div>
+                <strong>Dirección del taller</strong>
                 <span>Vía Complutense, 120, 28805 Alcalá de Henares (Madrid)</span>
               </div>
             </div>
 
             <div class="info-item">
-              <div class="info-icon">
+              <span class="info-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <polyline points="12 6 12 12 16 14"></polyline>
                 </svg>
-              </div>
-              <div class="info-text">
-                <strong>Horario de Apertura</strong>
-                <span>Lunes a Viernes: 08:00 - 19:30 (Ininterrumpido)</span>
+              </span>
+              <div>
+                <strong>Horario de apertura</strong>
+                <span>Lunes a Viernes: 08:00 - 19:30 (ininterrumpido)</span>
               </div>
             </div>
 
             <div class="info-item">
-              <div class="info-icon">
+              <span class="info-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
-              </div>
-              <div class="info-text">
-                <strong>Teléfono Directo</strong>
+              </span>
+              <div>
+                <strong>Teléfono directo</strong>
                 <a href="tel:+34918000000">+34 918 000 000</a> / <a href="tel:+34600000000">+34 600 000 000</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Columna Derecha: Formulario de Cita -->
-        <div class="contact-form-wrapper">
-          <h3>Pedir Cita Online</h3>
-          <p>Déjanos los datos de tu coche y te confirmamos hora en menos de 2 horas.</p>
-
-          <div id="formSuccessAlert" class="form-status-alert">
-            ✅ <strong>¡Solicitud de cita recibida!</strong> Nuestro equipo se pondrá en contacto contigo a la mayor brevedad.
+        <div class="form-card reveal" id="formCard" style="--d:1">
+          <div class="form-head">
+            <h3>Pedir cita online</h3>
+            <p class="form-sub">Déjanos los datos de tu coche y te confirmamos hora en menos de 2 horas.</p>
           </div>
 
-          <form id="tallerAppointmentForm" class="contact-form" onsubmit="handleTallerSubmit(event)">
+          <form id="tallerForm">
             <div class="form-row">
-              <div class="form-group">
-                <label for="nombre">Nombre y Apellidos</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Martínez" required>
+              <div class="field">
+                <label for="nombre">Nombre y apellidos</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Martínez" autocomplete="name" required>
               </div>
-              <div class="form-group">
+              <div class="field">
                 <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Ej. 612 345 678" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej. 612 345 678" autocomplete="tel" required>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="vehiculo">Vehículo (Marca, Modelo y Año)</label>
+            <div class="field">
+              <label for="vehiculo">Vehículo (marca, modelo y año)</label>
               <input type="text" id="vehiculo" name="vehiculo" placeholder="Ej. Volkswagen Golf GTI (2020)" required>
             </div>
 
-            <div class="form-group">
-              <label for="motivo">Motivo / Tipo de Reparación</label>
+            <div class="field">
+              <label for="motivo">Motivo / tipo de reparación</label>
               <select id="motivo" name="motivo" required>
                 <option value="" disabled selected>Selecciona un servicio...</option>
                 <option value="mantenimiento">Mantenimiento periódico / Revisión oficial</option>
@@ -327,22 +464,36 @@
               </select>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block">
-              Confirmar Solicitud de Cita
-            </button>
+            <button type="submit" class="btn btn-accent btn-block">Confirmar solicitud de cita</button>
           </form>
+
+          <div class="form-success" id="formSuccess" role="status" tabindex="-1">
+            <svg class="check-svg" viewBox="0 0 56 56" aria-hidden="true">
+              <circle cx="28" cy="28" r="26.5"></circle>
+              <path d="M16 29.5 L24.5 38 L40.5 19"></path>
+            </svg>
+            <h3>¡Solicitud recibida!</h3>
+            <p>Hemos registrado los datos de tu vehículo. Nuestro equipo se pondrá en contacto contigo en menos de 2 horas para confirmar día y hora.</p>
+            <button type="button" class="btn btn-ghost" id="formAgain">Enviar otra solicitud</button>
+          </div>
         </div>
 
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/34600000000?text=Hola%20Motorsport%20Garage,%20necesito%20informaci%C3%B3n%20para%20mi%20coche" target="_blank" rel="noopener noreferrer" class="fab-wa" aria-label="Escribir por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+  </a>
 
   <!-- FOOTER -->
   <footer>
-    <div class="container footer-content">
-      <div class="footer-brand">
-        <span>MOTORSPORT</span>&nbsp;GARAGE
-      </div>
+    <div class="container footer-inner">
+      <div class="footer-brand"><b>Motorsport</b> Garage</div>
       <p class="footer-copy">© 2026 MOTORSPORT GARAGE - Todos los derechos reservados. Alcalá de Henares, Madrid.</p>
       <div class="demo-attribution">
         <span>Web demo desarrollada por</span>
@@ -351,28 +502,6 @@
     </div>
   </footer>
 
-  <!-- SCRIPT PARA INTERACCIÓN DEL FORMULARIO -->
-  <script>
-    function handleTallerSubmit(event) {
-      event.preventDefault();
-      const alertBox = document.getElementById('formSuccessAlert');
-      const form = document.getElementById('tallerAppointmentForm');
-      
-      // Mostrar alerta visual de éxito
-      alertBox.style.display = 'block';
-      
-      // Feedback nativo también
-      alert("✅ ¡Cita solicitada con éxito!\n\nHemos registrado los datos de tu vehículo. Te llamaremos en menos de 2 horas para confirmar día y hora disponible en MOTORSPORT GARAGE.");
-      
-      // Limpiar formulario
-      form.reset();
-
-      // Ocultar alerta a los 8 segundos
-      setTimeout(() => {
-        alertBox.style.display = 'none';
-      }, 8000);
-    }
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
