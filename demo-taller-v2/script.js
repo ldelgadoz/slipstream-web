@@ -33,17 +33,40 @@
   }
 
   /* ---------------------------------------------------------------------
+     1b. Fotos opcionales: solo se muestran si el archivo existe en img/
+         (si no existe, la web se ve igual con el coche ilustrado)
+     --------------------------------------------------------------------- */
+  $$('[data-photo]').forEach(function (el) {
+    var img = new Image();
+    img.onload = function () {
+      el.style.backgroundImage = 'url("' + el.getAttribute('data-photo') + '")';
+      el.classList.add('has-photo');
+    };
+    img.src = el.getAttribute('data-photo');
+  });
+
+  /* ---------------------------------------------------------------------
      2. Header, parallax de la palabra fantasma y scroll-linked (un listener)
      --------------------------------------------------------------------- */
   var header = $('#header');
   var ghost = $('#ghost');
+  var car = $('#heroCar');
+  var bandPhoto = $('#bandPhoto');
   var ticking = false;
 
   function onScroll() {
     var y = window.scrollY || window.pageYOffset;
     header.classList.toggle('is-scrolled', y > 40);
-    if (ghost && !reduce && y < window.innerHeight * 1.5) {
-      ghost.style.transform = 'translate3d(' + (-y * 0.2).toFixed(1) + 'px,0,0)';
+    if (!reduce && y < window.innerHeight * 1.5) {
+      if (ghost) ghost.style.transform = 'translate3d(' + (-y * 0.2).toFixed(1) + 'px,0,0)';
+      // El coche "arranca" hacia la derecha al bajar
+      if (car) car.style.transform = 'translate3d(' + (y * 0.32).toFixed(1) + 'px,0,0)';
+    }
+    if (!reduce && bandPhoto && bandPhoto.classList.contains('has-photo')) {
+      var br = bandPhoto.parentNode.getBoundingClientRect();
+      if (br.bottom > 0 && br.top < window.innerHeight) {
+        bandPhoto.style.transform = 'translate3d(0,' + (br.top * -0.14).toFixed(1) + 'px,0)';
+      }
     }
     updatePinned();
     updateProcess();

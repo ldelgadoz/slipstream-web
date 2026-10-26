@@ -1,0 +1,23 @@
+FOTOS DE LA WEB (opcionales)
+============================
+
+La web funciona sin fotos: el coche del inicio es un dibujo hecho en SVG.
+Si quieres fotos reales, guárdalas en ESTA carpeta con estos nombres y se
+activan solas (no hay que tocar ningún código):
+
+  hero.jpg    -> fondo del inicio (detrás del titular).
+                 Mejor horizontal, mínimo 1920 x 1080 px, coche oscuro/nocturno.
+  banner.jpg  -> banda a pantalla completa debajo de las estadísticas.
+                 Mejor horizontal, mínimo 1920 x 1080 px.
+
+Consejos
+--------
+- Pesa menos de 400 KB cada una (comprímelas en squoosh.app) para que la web
+  siga cargando rápido.
+- Usa fotos con licencia libre o propias, por ejemplo de:
+    https://unsplash.com/s/photos/sports-car
+    https://www.pexels.com/search/sports-car/
+  Evita fotos de marcas concretas sacadas de fondos de pantalla o buscadores:
+  suelen tener derechos de autor.
+- Si algún día quieres PNG o WebP, cambia la extensión en index.html
+  (atributos data-photo="img/hero.jpg" y data-photo="img/banner.jpg").

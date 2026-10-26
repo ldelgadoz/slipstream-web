@@ -32,7 +32,7 @@
         <a href="#servicios">Servicios</a>
         <a href="#proceso">Proceso</a>
         <a href="#cita">Contacto</a>
-        <a href="#cita" class="btn btn-copper btn-sm magnetic">Pedir cita</a>
+        <a href="#cita" class="btn btn-red btn-sm magnetic">Pedir cita</a>
       </nav>
       <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span>
@@ -55,6 +55,8 @@
     <!-- HERO -->
     <section class="hero" id="inicio">
       <div class="hero-bg" aria-hidden="true">
+        <!-- Foto de fondo opcional: guarda tu imagen como img/hero.jpg (ver img/LEEME.txt) -->
+        <div class="hero-photo" data-photo="img/hero.jpg"></div>
         <div class="glow"></div>
         <div class="streaks">
           <span style="--t:18%;--w:42vw;--s:5.5s;--d:0s"></span>
@@ -67,6 +69,78 @@
           <span style="--t:83%;--w:50vw;--s:5.8s;--d:2s"></span>
         </div>
         <div class="ghost-word" id="ghost">Motorsport</div>
+
+        <!-- Coche ilustrado (silueta deportiva original, hecha en SVG) -->
+        <div class="hero-car">
+          <div class="hero-car-inner" id="heroCar">
+            <svg viewBox="0 0 820 270" role="presentation" focusable="false">
+              <defs>
+                <linearGradient id="carBody" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#34343b"/>
+                  <stop offset="0.55" stop-color="#17171b"/>
+                  <stop offset="1" stop-color="#0b0b0d"/>
+                </linearGradient>
+                <linearGradient id="carGlass" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#1d2026"/>
+                  <stop offset="1" stop-color="#07080a"/>
+                </linearGradient>
+                <radialGradient id="carGlow" cx="0.5" cy="0.5" r="0.5">
+                  <stop offset="0" stop-color="#e4202a" stop-opacity="0.55"/>
+                  <stop offset="1" stop-color="#e4202a" stop-opacity="0"/>
+                </radialGradient>
+                <filter id="lampBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+              </defs>
+
+              <!-- suelo y resplandor rojo -->
+              <ellipse class="car-underglow" cx="410" cy="232" rx="380" ry="26" fill="url(#carGlow)"/>
+              <ellipse cx="410" cy="234" rx="350" ry="8" fill="#000" opacity="0.65"/>
+
+              <!-- carrocería -->
+              <path d="M34 200 L34 176 C34 162 48 154 70 150 L150 138 C196 116 246 88 336 78 C430 70 508 80 566 102 L662 124 C716 134 760 148 784 170 C794 180 792 194 786 200 Z"
+                    fill="url(#carBody)" stroke="#ff5a4d" stroke-opacity="0.75" stroke-width="1.6" stroke-linejoin="round"/>
+              <!-- línea de carácter y toma de aire -->
+              <path d="M70 170 C220 160 520 152 776 178" fill="none" stroke="#fff" stroke-opacity="0.14" stroke-width="1.4"/>
+              <path d="M652 150 L706 160" stroke="#000" stroke-opacity="0.6" stroke-width="5" stroke-linecap="round"/>
+
+              <!-- cristales -->
+              <path d="M252 122 C292 98 340 90 394 90 C452 90 502 98 542 118 L528 126 L258 126 Z"
+                    fill="url(#carGlass)" stroke="#fff" stroke-opacity="0.16" stroke-width="1.2"/>
+              <path d="M394 90 L390 126" stroke="#fff" stroke-opacity="0.16" stroke-width="1.2"/>
+              <path d="M270 118 C300 104 340 98 372 97" fill="none" stroke="#fff" stroke-opacity="0.22" stroke-width="1.6" stroke-linecap="round"/>
+
+              <!-- faros -->
+              <path class="lamp-glow" d="M742 154 L790 168 L738 168 Z" fill="#ff5a4d" filter="url(#lampBlur)"/>
+              <path class="lamp" d="M744 156 L786 168 L740 167 Z" fill="#ffd9d4"/>
+              <path class="lamp-rear" d="M34 170 L50 160 L50 172 Z" fill="#e4202a"/>
+
+              <!-- pasos de rueda -->
+              <circle cx="200" cy="200" r="55" fill="#08080a"/>
+              <circle cx="618" cy="200" r="55" fill="#08080a"/>
+
+              <!-- ruedas -->
+              <g transform="translate(200 200)">
+                <circle r="46" fill="#101012" stroke="#2c2c31" stroke-width="2"/>
+                <circle r="32" fill="#1a1a1f" stroke="#555" stroke-width="2"/>
+                <g class="spin">
+                  <line x1="-30" y1="0" x2="30" y2="0" stroke="#8a8a92" stroke-width="4" stroke-linecap="round"/>
+                  <line x1="-30" y1="0" x2="30" y2="0" stroke="#8a8a92" stroke-width="4" stroke-linecap="round" transform="rotate(60)"/>
+                  <line x1="-30" y1="0" x2="30" y2="0" stroke="#8a8a92" stroke-width="4" stroke-linecap="round" transform="rotate(120)"/>
+                </g>
+                <circle r="7" fill="#e4202a"/>
+              </g>
+              <g transform="translate(618 200)">
+                <circle r="46" fill="#101012" stroke="#2c2c31" stroke-width="2"/>
+                <circle r="32" fill="#1a1a1f" stroke="#555" stroke-width="2"/>
+                <g class="spin">
+                  <line x1="-30" y1="0" x2="30" y2="0" stroke="#8a8a92" stroke-width="4" stroke-linecap="round"/>
+                  <line x1="-30" y1="0" x2="30" y2="0" stroke="#8a8a92" stroke-width="4" stroke-linecap="round" transform="rotate(60)"/>
+                  <line x1="-30" y1="0" x2="30" y2="0" stroke="#8a8a92" stroke-width="4" stroke-linecap="round" transform="rotate(120)"/>
+                </g>
+                <circle r="7" fill="#e4202a"/>
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
 
       <div class="container hero-inner">
@@ -80,7 +154,7 @@
           Mantenimiento sin perder la garantía del fabricante, diagnosis con equipos de última generación y un presupuesto por escrito antes de tocar tu coche.
         </p>
         <div class="hero-cta">
-          <a href="#cita" class="btn btn-copper magnetic">
+          <a href="#cita" class="btn btn-red magnetic">
             Pedir cita previa
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
@@ -198,6 +272,16 @@
       </div>
     </section>
 
+    <!-- BANDA CON FOTO (opcional: img/banner.jpg, ver img/LEEME.txt) -->
+    <section class="photo-band" aria-label="El taller">
+      <div class="band-photo" id="bandPhoto" data-photo="img/banner.jpg" aria-hidden="true"></div>
+      <div class="container band-inner reveal">
+        <p class="eyebrow">El taller</p>
+        <h2>Tu coche, en manos<br>de quien lo entiende</h2>
+        <a href="#cita" class="btn btn-red magnetic">Reservar diagnóstico</a>
+      </div>
+    </section>
+
     <!-- PROCESO -->
     <section class="process" id="proceso">
       <div class="container process-grid">
@@ -303,7 +387,7 @@
               <textarea id="mensaje" name="mensaje" rows="3" placeholder="Ruidos, testigos encendidos, revisión..."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-copper btn-block">Enviar solicitud</button>
+            <button type="submit" class="btn btn-red btn-block">Enviar solicitud</button>
             <p class="form-hint">Domingos cerrado. Te contestamos en menos de 2 horas laborables.</p>
           </form>
 
@@ -324,7 +408,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-big">Motorsport<br><b>Garage</b></div>
-        <a href="#cita" class="btn btn-copper magnetic">Pedir cita</a>
+        <a href="#cita" class="btn btn-red magnetic">Pedir cita</a>
       </div>
       <div class="footer-bottom">
         <span>© 2026 Motorsport Garage · Alcalá de Henares</span>
