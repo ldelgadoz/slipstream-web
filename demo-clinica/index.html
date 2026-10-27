@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- Hoja de Estilos -->
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -50,75 +51,90 @@
   </div>
 
   <!-- NAVBAR STICKY -->
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="container nav-content">
-      <a href="#" class="brand-logo">
+      <a href="index.html" class="brand-logo" aria-label="Clínica Goaldental Odontostudio, inicio">
         <div class="brand-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2v20M2 12h20"></path>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20"></path></svg>
         </div>
         CLÍNICA GOALDENTAL <span>ODONTOSTUDIO</span>
       </a>
       <ul class="nav-links">
-        <li><a href="tratamientos.html">Tratamientos</a></li>
-        <li><a href="#tecnologia">Tecnología</a></li>
-        <li><a href="#testimonios">Opiniones</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+        <li class="has-dropdown">
+          <a href="tratamientos.html" class="nav-link">Tratamientos <svg class="chev" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="dropdown"><a href="tratamientos.html#implantes"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5z"/><path d="M12 15v7"/><path d="M8 18h8"/></svg></span><span><strong>Implantes dentales</strong><small>Dientes fijos en 24 horas</small></span></a><a href="tratamientos.html#ortodoncia"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></span><span><strong>Ortodoncia invisible</strong><small>Alineadores transparentes</small></span></a><a href="tratamientos.html#estetica"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span><strong>Carillas y diseño de sonrisa</strong><small>Porcelana ultrafina</small></span></a><a href="tratamientos.html#blanqueamiento"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span><strong>Blanqueamiento LED</strong><small>Hasta 6 tonos más</small></span></a><a href="tratamientos.html#periodoncia"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span><strong>Periodoncia y encías</strong><small>Protege tus encías</small></span></a><a href="tratamientos.html#odontopediatria"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span><span><strong>Odontopediatría</strong><small>Para los más pequeños</small></span></a></div>
+        </li>
+        <li><a href="index.html#equipo" class="nav-link">Equipo</a></li>
+        <li><a href="index.html#faq" class="nav-link">Preguntas</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
       </ul>
-      <a href="#contacto" class="btn btn-primary btn-nav">Primera Consulta Gratis</a>
+      <a href="contacto.html" class="btn btn-primary btn-nav">Primera consulta gratis</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobilePanel" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-panel" id="mobilePanel">
+      <div class="mp-inner">
+        <a class="mp-link" href="index.html">Inicio</a>
+        <a class="mp-link" href="tratamientos.html">Tratamientos</a>
+        <div class="mp-sub"><a href="tratamientos.html#implantes">Implantes dentales</a><a href="tratamientos.html#ortodoncia">Ortodoncia invisible</a><a href="tratamientos.html#estetica">Carillas y diseño de sonrisa</a><a href="tratamientos.html#blanqueamiento">Blanqueamiento LED</a><a href="tratamientos.html#periodoncia">Periodoncia y encías</a><a href="tratamientos.html#odontopediatria">Odontopediatría</a><a href="tratamientos.html#sedacion">Sedación consciente</a></div>
+        <a class="mp-link" href="index.html#equipo">Equipo</a>
+        <a class="mp-link" href="index.html#faq">Preguntas frecuentes</a>
+        <a class="mp-link" href="contacto.html">Contacto</a>
+        <div class="mp-actions">
+          <a class="btn btn-primary" href="contacto.html">Pedir cita gratuita</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+        <a class="mp-back" href="../index.html">← Volver a Slipstream Web's</a>
+      </div>
     </div>
   </header>
 
   <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="badge-tranquilidad">
-        <span class="badge-dot"></span>
-        Tratamientos sin dolor con Sedación Consciente
-      </div>
-      
-      <h1>
-        Tu salud bucodental en manos de especialistas.<br>
-        <span>Vuelve a sonreír con total confianza.</span>
-      </h1>
-      
-      <p class="hero-subtitle">
-        Diagnóstico digital 3D gratuito, laboratorio propio para resultados en tiempo récord y financiación a tu medida hasta en 24 meses sin intereses.
-      </p>
-
-      <div class="hero-cta-group">
-        <a href="#contacto" class="btn btn-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
-          </svg>
-          Pedir Cita Gratuita
-        </a>
-        <a href="https://wa.me/34600000000?text=Hola,%20quisiera%20solicitar%20mi%20primera%20consulta%20gratuita%20en%20GoalDental" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-          </svg>
-          Consulta Rápida por WhatsApp
-        </a>
-      </div>
-
-      <!-- MÉTRICAS DE CONFIANZA -->
-      <div class="hero-metrics">
-        <div class="metric-item">
-          <span class="metric-number">+20.000</span>
-          <span class="metric-label">Pacientes sonrientes atendidos</span>
+  <section class="hero hero-split">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="badge-tranquilidad"><span class="badge-dot"></span>Tratamientos sin dolor con sedación consciente</div>
+          <h1>Tu salud bucodental en manos de especialistas.<br><span>Vuelve a sonreír con confianza.</span></h1>
+          <p class="hero-subtitle">Diagnóstico digital 3D gratuito, laboratorio propio para resultados en tiempo récord y financiación a tu medida hasta en 24 meses sin intereses.</p>
+          <div class="hero-cta-group">
+            <a href="contacto.html" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Pedir cita gratuita</a>
+            <a href="https://wa.me/34600000000?text=Hola,%20quisiera%20solicitar%20mi%20primera%20consulta%20gratuita%20en%20GoalDental" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Consulta rápida por WhatsApp</a>
+          </div>
+          <ul class="hero-checks">
+            <li>Primera visita sin compromiso</li>
+            <li>Presupuesto cerrado</li>
+            <li>Garantía por escrito</li>
+          </ul>
         </div>
-        <div class="metric-item">
-          <div class="metric-stars">★★★★★</div>
-          <span class="metric-number">4.9 / 5</span>
-          <span class="metric-label">Valoración en Google Reviews</span>
+        <div class="hero-visual">
+          <div class="hv-frame">
+            <div class="hv-art"><svg viewBox="0 0 400 450" role="img" aria-label="Ilustración de una sonrisa cuidada">
+  <defs>
+    <linearGradient id="gt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e0f2fe"/></linearGradient>
+    <linearGradient id="gb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bae6fd" stop-opacity=".7"/><stop offset="1" stop-color="#a7f3d0" stop-opacity=".5"/></linearGradient>
+  </defs>
+  <circle cx="200" cy="225" r="150" fill="url(#gb)"/>
+  <circle cx="200" cy="225" r="190" fill="none" stroke="#7dd3fc" stroke-opacity=".5" stroke-dasharray="4 10"/>
+  <path d="M200 92c-34-34-102-26-114 38-9 48 22 76 28 124 6 58 6 118 40 118 30 0 26-86 46-86s16 86 46 86c34 0 34-60 40-118 6-48 37-76 28-124-12-64-80-72-114-38z" fill="url(#gt)" stroke="#0284c7" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M138 138c10-18 30-24 46-16" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".95"/>
+  <path d="M150 210q50 34 100 0" fill="none" stroke="#0284c7" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="162" cy="178" r="7" fill="#0284c7"/><circle cx="238" cy="178" r="7" fill="#0284c7"/>
+  <g fill="#10b981"><path class="sparkle" d="M318 112l7 17 17 7-17 7-7 17-7-17-17-7 17-7z"/><path class="sparkle" style="animation-delay:-1.2s" d="M82 300l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/></g>
+  <g fill="#f59e0b"><path class="sparkle" style="animation-delay:-2.1s" d="M96 96l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/></g>
+</svg></div>
+            <div class="hv-photo" data-photo="img/hero.jpg"></div>
+          </div>
+          <div class="hv-chip c1"><span class="ci"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span><span>Diagnóstico 3D<small>incluido en tu 1ª visita</small></span></div>
+          <div class="hv-chip c2"><span class="ci"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span><span>Laboratorio propio<small>prótesis en 24 h</small></span></div>
+          <div class="hv-chip c3"><span class="ci"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span><span>Sin dolor<small>sedación consciente</small></span></div>
         </div>
-        <div class="metric-item">
-          <span class="metric-number">24 Horas</span>
-          <span class="metric-label">Laboratorio Dental Propio</span>
+      </div>
+      <div class="hero-metrics-wrap">
+        <div class="hero-metrics">
+          <div class="metric-item"><span class="metric-number">+20.000</span><span class="metric-label">Pacientes atendidos</span></div>
+          <div class="metric-item"><div class="metric-stars">★★★★★</div><span class="metric-number">4.9 / 5</span><span class="metric-label">Valoración en Google (dato de ejemplo)</span></div>
+          <div class="metric-item"><span class="metric-number">24 Horas</span><span class="metric-label">Laboratorio dental propio</span></div>
         </div>
       </div>
     </div>
@@ -127,7 +143,7 @@
   <!-- TRATAMIENTOS ESTRELLA -->
   <section id="tratamientos">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <span class="section-tag">Odontología Integral</span>
         <h2>Tratamientos Especializados</h2>
         <p>Soluciones de vanguardia médica con enfoque personalizado, precisión digital y máximo confort.</p>
@@ -135,7 +151,7 @@
 
       <div class="treatments-grid">
         <!-- Tratamiento 1 -->
-        <div class="treatment-card">
+        <a class="treatment-card reveal" style="--d:0" href="tratamientos.html#implantes">
           <div class="treatment-icon-wrap">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5z"></path>
@@ -148,10 +164,10 @@
             Recupera la funcionalidad y estética de tus dientes en solo 1 día mediante cirugía guiada por ordenador mínimamente invasiva.
           </p>
           <span class="treatment-feature">Dientes fijos en 24h</span>
-        </div>
+        </a>
 
         <!-- Tratamiento 2 -->
-        <div class="treatment-card">
+        <a class="treatment-card reveal" style="--d:1" href="tratamientos.html#ortodoncia">
           <div class="treatment-icon-wrap">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
@@ -165,10 +181,10 @@
             Alineadores transparentes extraíbles, higiénicos y prácticamente imperceptibles. Diseñados a medida para corregir tu mordida.
           </p>
           <span class="treatment-feature">Sin brackets metálicos</span>
-        </div>
+        </a>
 
         <!-- Tratamiento 3 -->
-        <div class="treatment-card">
+        <a class="treatment-card reveal" style="--d:2" href="tratamientos.html#estetica">
           <div class="treatment-icon-wrap">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
@@ -179,10 +195,10 @@
             Diseño digital de sonrisa (DSD), carillas cerámicas de alta resistencia y blanqueamiento led para una sonrisa luminosa y natural.
           </p>
           <span class="treatment-feature">Carillas de porcelana ultrafinas</span>
-        </div>
+        </a>
 
         <!-- Tratamiento 4 -->
-        <div class="treatment-card">
+        <a class="treatment-card reveal" style="--d:3" href="tratamientos.html#blanqueamiento">
           <div class="treatment-icon-wrap">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -196,10 +212,10 @@
             Atención cariñosa y cercana para los más pequeños de la casa. Cuidamos su salud dental desde la infancia creando hábitos positivos.
           </p>
           <span class="treatment-feature">Entorno amigable sin miedos</span>
-        </div>
+        </a>
 
         <!-- Tratamiento 5 -->
-        <div class="treatment-card">
+        <a class="treatment-card reveal" style="--d:4" href="tratamientos.html#periodoncia">
           <div class="treatment-icon-wrap">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -210,10 +226,10 @@
             Eliminación exhaustiva de bacterias, tratamiento de gingivitis y periodontitis para frenar el sangrado y evitar la pérdida de piezas dentales.
           </p>
           <span class="treatment-feature">Protección del soporte dental</span>
-        </div>
+        </a>
 
         <!-- Tratamiento 6 -->
-        <div class="treatment-card">
+        <a class="treatment-card reveal" style="--d:5" href="tratamientos.html#odontopediatria">
           <div class="treatment-icon-wrap">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
@@ -224,7 +240,24 @@
             Especialmente indicada para personas con fobia o ansiedad al dentista. Tratamientos completos en una sola sesión en estado de calma total.
           </p>
           <span class="treatment-feature">Experiencia 100% indolora</span>
-        </div>
+        </a>
+      </div>
+      <div class="team-note"><a class="btn btn-outline" href="tratamientos.html">Ver todos los tratamientos →</a></div>
+    </div>
+  </section>
+
+  <!-- PRIMERA VISITA -->
+  <section id="primera-visita" class="visit-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Cómo funciona</span>
+        <h2>Tu primera visita, en 3 pasos</h2>
+        <p>Sin letra pequeña: así es empezar con nosotros.</p>
+      </div>
+      <div class="visit-steps">
+        <div class="visit-step reveal" style="--d:0"><div class="visit-num">1</div><h3>Pides tu cita</h3><p>Por formulario, teléfono o WhatsApp. Te confirmamos día y hora en menos de 2 horas hábiles.</p></div>
+        <div class="visit-step reveal" style="--d:1"><div class="visit-num">2</div><h3>Revisión y diagnóstico 3D</h3><p>Exploración con el especialista, radiografía panorámica y escáner digital. Sin coste.</p></div>
+        <div class="visit-step reveal" style="--d:2"><div class="visit-num">3</div><h3>Plan y presupuesto cerrado</h3><p>Te explicamos las opciones con claridad, los plazos y las formas de pago. Decides sin prisa.</p></div>
       </div>
     </div>
   </section>
@@ -321,18 +354,36 @@
     </div>
   </section>
 
+  <!-- EQUIPO -->
+  <section id="equipo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestro equipo</span>
+        <h2>Especialistas que te acompañan en cada paso</h2>
+        <p>Un equipo multidisciplinar con una sola idea: que te sientas cuidado desde que entras por la puerta.</p>
+      </div>
+      <div class="team-grid">
+        <article class="team-card reveal" style="--d:0"><div class="team-photo"><svg viewBox="0 0 200 220" fill="currentColor" aria-hidden="true"><circle cx="100" cy="78" r="42"/><path d="M20 220c0-50 35-82 80-82s80 32 80 82z"/></svg><div class="tp-img" data-photo="img/equipo-1.jpg"></div></div><div class="team-info"><h3>Dirección médica</h3><p>Coordina tu plan de tratamiento y revisa cada caso en equipo.</p></div></article>
+        <article class="team-card reveal" style="--d:1"><div class="team-photo"><svg viewBox="0 0 200 220" fill="currentColor" aria-hidden="true"><circle cx="100" cy="78" r="42"/><path d="M20 220c0-50 35-82 80-82s80 32 80 82z"/></svg><div class="tp-img" data-photo="img/equipo-2.jpg"></div></div><div class="team-info"><h3>Implantología y cirugía</h3><p>Cirugía guiada por ordenador y rehabilitación sobre implantes.</p></div></article>
+        <article class="team-card reveal" style="--d:2"><div class="team-photo"><svg viewBox="0 0 200 220" fill="currentColor" aria-hidden="true"><circle cx="100" cy="78" r="42"/><path d="M20 220c0-50 35-82 80-82s80 32 80 82z"/></svg><div class="tp-img" data-photo="img/equipo-3.jpg"></div></div><div class="team-info"><h3>Ortodoncia y estética</h3><p>Alineadores invisibles, carillas y diseño digital de sonrisa.</p></div></article>
+        <article class="team-card reveal" style="--d:3"><div class="team-photo"><svg viewBox="0 0 200 220" fill="currentColor" aria-hidden="true"><circle cx="100" cy="78" r="42"/><path d="M20 220c0-50 35-82 80-82s80 32 80 82z"/></svg><div class="tp-img" data-photo="img/equipo-4.jpg"></div></div><div class="team-info"><h3>Odontopediatría y familia</h3><p>Atención cercana para los más pequeños y para toda la familia.</p></div></article>
+      </div>
+      <p class="team-note">Aquí irán las fotos y nombres reales del equipo (carpeta <code>img/</code>).</p>
+    </div>
+  </section>
+
   <!-- TESTIMONIOS -->
   <section id="testimonios">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <span class="section-tag">Opiniones Reales</span>
         <h2>La Confianza de Nuestros Pacientes</h2>
-        <p>Experiencias de personas que superaron sus temores y recuperaron su sonrisa con nosotros.</p>
+        <p>Opiniones de ejemplo: en la web final irán reseñas reales de tus pacientes.</p>
       </div>
 
       <div class="testimonials-grid">
         <!-- Testimonio 1 -->
-        <div class="testimonial-card">
+        <div class="testimonial-card reveal">
           <div>
             <div class="testimonial-stars">★★★★★</div>
             <p class="testimonial-quote">
@@ -349,7 +400,7 @@
         </div>
 
         <!-- Testimonio 2 -->
-        <div class="testimonial-card">
+        <div class="testimonial-card reveal">
           <div>
             <div class="testimonial-stars">★★★★★</div>
             <p class="testimonial-quote">
@@ -366,7 +417,7 @@
         </div>
 
         <!-- Testimonio 3 -->
-        <div class="testimonial-card">
+        <div class="testimonial-card reveal">
           <div>
             <div class="testimonial-stars">★★★★★</div>
             <p class="testimonial-quote">
@@ -381,6 +432,23 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="visit-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Resolvemos tus dudas</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal" style="--d:0"><summary>¿La primera consulta tiene algún coste?</summary><p>No. La primera visita incluye la revisión con el especialista, radiografía panorámica y un presupuesto personalizado, sin compromiso.</p></details>
+        <details class="faq-item reveal" style="--d:1"><summary>¿Los tratamientos duelen?</summary><p>Trabajamos con anestesia local y, si lo necesitas, con sedación consciente: estarás relajado y sin ansiedad durante todo el tratamiento.</p></details>
+        <details class="faq-item reveal" style="--d:2"><summary>¿Puedo financiar mi tratamiento?</summary><p>Sí. Ofrecemos planes de pago adaptados, hasta 24 meses sin intereses. Te lo explicamos con detalle en la primera cita.</p></details>
+        <details class="faq-item reveal" style="--d:3"><summary>¿Cuánto tarda un implante?</summary><p>Depende de cada caso. En muchos pacientes es posible colocar los dientes fijos el mismo día gracias a la cirugía guiada; el especialista lo valora en tu diagnóstico.</p></details>
+        <details class="faq-item reveal" style="--d:4"><summary>¿Atendéis urgencias dentales?</summary><p>Sí. Si tienes dolor agudo, llámanos o escríbenos por WhatsApp y te damos cita lo antes posible.</p></details>
       </div>
     </div>
   </section>
@@ -447,7 +515,7 @@
             ✅ <strong>¡Solicitud de cita recibida!</strong> Nos pondremos en contacto contigo para confirmar tu primera visita gratuita.
           </div>
 
-          <form id="clinicAppointmentForm" class="contact-form" onsubmit="handleClinicSubmit(event)">
+          <form id="clinicAppointmentForm" class="contact-form" data-demo-form data-alert="formSuccessAlert">
             <div class="form-row">
               <div class="form-group">
                 <label for="nombre">Nombre y Apellidos</label>
@@ -494,42 +562,53 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="container footer-content">
-      <div class="footer-brand">
-        CLÍNICA GOALDENTAL <span>ODONTOSTUDIO</span>
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div class="footer-col-brand">
+          <h4>CLÍNICA GOALDENTAL <span>ODONTOSTUDIO</span></h4>
+          <p>Odontología médica avanzada, implantes dentales, ortodoncia invisible y estética dental en Alcalá de Henares y Comunidad de Madrid.</p>
+        </div>
+        <div class="footer-col-links">
+          <h5 class="footer-links-title">Navegación</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tratamientos.html">Tratamientos</a></li>
+            <li><a href="index.html#equipo">Equipo</a></li>
+            <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+            <li><a href="contacto.html">Pedir cita</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-links">
+          <h5 class="footer-links-title">Horario</h5>
+          <ul class="footer-links-list">
+            <li>Lunes a viernes: 09:00 - 20:30</li>
+            <li>Sábados: con cita previa</li>
+            <li>Domingos: urgencias bajo llamada</li>
+          </ul>
+        </div>
+        <div class="footer-col-links">
+          <h5 class="footer-links-title">Contacto</h5>
+          <ul class="footer-links-list">
+            <li><a href="tel:+34918000000">918 00 00 00</a></li>
+            <li><a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">WhatsApp: 600 000 000</a></li>
+            <li>Vía Complutense, 45, Alcalá de Henares</li>
+          </ul>
+        </div>
       </div>
-      <p class="footer-copy">
-        © 2026 CLÍNICA GOALDENTAL • ODONTOSTUDIO - Especialistas en Implantes, Ortodoncia Invisible y Estética Dental. Alcalá de Henares, Madrid.
-      </p>
-      <div class="demo-attribution">
-        <span>Web demo médica desarrollada por</span>
-        <a href="../index.html">Slipstream Webs</a>
+      <div class="footer-bottom-bar">
+        <p class="footer-copy">© 2026 CLÍNICA GOALDENTAL • ODONTOSTUDIO - Todos los derechos reservados.</p>
+        <div class="demo-attribution"><span>Web demo desarrollada por</span> <a href="../index.html">Slipstream Webs</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- SCRIPT INTERACTIVO -->
-  <script>
-    function handleClinicSubmit(event) {
-      event.preventDefault();
-      const alertBox = document.getElementById('formSuccessAlert');
-      const form = document.getElementById('clinicAppointmentForm');
-      
-      // Mostrar alerta de confirmación
-      alertBox.style.display = 'block';
-      
-      // Alerta nativa
-      alert("✅ ¡Cita solicitada con éxito!\n\nHemos recibido tus datos en CLÍNICA GOALDENTAL. Te contactaremos en breve para confirmar el horario de tu primera consulta gratuita con diagnóstico 3D.");
-      
-      // Resetear campos
-      form.reset();
+  <div class="float-cta" id="floatCta">
+    <a class="fc-btn fc-call" href="tel:+34918000000"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="fc-label">Llamar</span></a>
+    <a class="fc-btn fc-wa" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+    <a class="fc-btn fc-cita" href="contacto.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Pedir cita</span></a>
+  </div>
 
-      // Ocultar alerta pasados unos segundos
-      setTimeout(() => {
-        alertBox.style.display = 'none';
-      }, 8000);
-    }
-  </script>
+  <script src="script.js" defer></script>
 
 </body>
 </html>

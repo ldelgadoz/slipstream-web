@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- Hoja de Estilos Compartida -->
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -50,28 +51,48 @@
   </div>
 
   <!-- NAVBAR STICKY -->
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="container nav-content">
-      <a href="index.html" class="brand-logo">
+      <a href="index.html" class="brand-logo" aria-label="Clínica Goaldental Odontostudio, inicio">
         <div class="brand-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2v20M2 12h20"></path>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20"></path></svg>
         </div>
         CLÍNICA GOALDENTAL <span>ODONTOSTUDIO</span>
       </a>
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Inicio</a></li>
-        <li><a href="tratamientos.html" class="nav-link active">Tratamientos</a></li>
+        <li class="has-dropdown">
+          <a href="tratamientos.html" class="nav-link active" aria-current="page">Tratamientos <svg class="chev" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="dropdown"><a href="tratamientos.html#implantes"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5z"/><path d="M12 15v7"/><path d="M8 18h8"/></svg></span><span><strong>Implantes dentales</strong><small>Dientes fijos en 24 horas</small></span></a><a href="tratamientos.html#ortodoncia"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></span><span><strong>Ortodoncia invisible</strong><small>Alineadores transparentes</small></span></a><a href="tratamientos.html#estetica"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span><strong>Carillas y diseño de sonrisa</strong><small>Porcelana ultrafina</small></span></a><a href="tratamientos.html#blanqueamiento"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span><strong>Blanqueamiento LED</strong><small>Hasta 6 tonos más</small></span></a><a href="tratamientos.html#periodoncia"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span><strong>Periodoncia y encías</strong><small>Protege tus encías</small></span></a><a href="tratamientos.html#odontopediatria"><span class="dd-ico"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span><span><strong>Odontopediatría</strong><small>Para los más pequeños</small></span></a></div>
+        </li>
+        <li><a href="index.html#equipo" class="nav-link">Equipo</a></li>
+        <li><a href="index.html#faq" class="nav-link">Preguntas</a></li>
         <li><a href="contacto.html" class="nav-link">Contacto</a></li>
       </ul>
-      <a href="contacto.html" class="btn btn-primary btn-nav">Pedir Cita Gratis</a>
+      <a href="contacto.html" class="btn btn-primary btn-nav">Primera consulta gratis</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobilePanel" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-panel" id="mobilePanel">
+      <div class="mp-inner">
+        <a class="mp-link" href="index.html">Inicio</a>
+        <a class="mp-link" href="tratamientos.html">Tratamientos</a>
+        <div class="mp-sub"><a href="tratamientos.html#implantes">Implantes dentales</a><a href="tratamientos.html#ortodoncia">Ortodoncia invisible</a><a href="tratamientos.html#estetica">Carillas y diseño de sonrisa</a><a href="tratamientos.html#blanqueamiento">Blanqueamiento LED</a><a href="tratamientos.html#periodoncia">Periodoncia y encías</a><a href="tratamientos.html#odontopediatria">Odontopediatría</a><a href="tratamientos.html#sedacion">Sedación consciente</a></div>
+        <a class="mp-link" href="index.html#equipo">Equipo</a>
+        <a class="mp-link" href="index.html#faq">Preguntas frecuentes</a>
+        <a class="mp-link" href="contacto.html">Contacto</a>
+        <div class="mp-actions">
+          <a class="btn btn-primary" href="contacto.html">Pedir cita gratuita</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+        <a class="mp-back" href="../index.html">← Volver a Slipstream Web's</a>
+      </div>
     </div>
   </header>
 
   <!-- ENCABEZADO DE PÁGINA -->
   <section class="page-hero-header">
     <div class="container">
+      <ol class="breadcrumb"><li><a href="index.html">Inicio</a></li><li>Tratamientos</li></ol>
       <span class="section-tag">Odontología Digital y Quirúrgica</span>
       <h1>Nuestras Especialidades Odontológicas</h1>
       <p>
@@ -81,28 +102,28 @@
   </section>
 
   <!-- CATÁLOGO Y FILTROS -->
-  <section style="padding: 50px 0 80px;">
+  <section class="catalog-section" style="padding: 50px 0 80px;">
     <div class="container">
       <!-- Filtros Visuales -->
       <div class="treatments-filter-bar">
-        <button class="filter-btn active" onclick="filterTreatments('all', this)">Todas las Especialidades</button>
-        <button class="filter-btn" onclick="filterTreatments('implantes', this)">Implantes Dentales</button>
-        <button class="filter-btn" onclick="filterTreatments('ortodoncia', this)">Ortodoncia Invisible</button>
-        <button class="filter-btn" onclick="filterTreatments('estetica', this)">Estética Dental</button>
-        <button class="filter-btn" onclick="filterTreatments('general', this)">Salud General y Familia</button>
+        <button class="filter-btn active" data-filter="all" type="button">Todas las Especialidades</button>
+        <button class="filter-btn" data-filter="implantes" type="button">Implantes Dentales</button>
+        <button class="filter-btn" data-filter="ortodoncia" type="button">Ortodoncia Invisible</button>
+        <button class="filter-btn" data-filter="estetica" type="button">Estética Dental</button>
+        <button class="filter-btn" data-filter="general" type="button">Salud General y Familia</button>
       </div>
 
       <!-- Grid de 6 Especialidades -->
       <div class="treatments-cards-grid" id="treatmentsGrid">
         
         <!-- Tratamiento 1: Implantes -->
-        <div class="detail-treatment-card" data-category="implantes" id="implantes">
+        <div class="detail-treatment-card reveal" data-category="implantes" id="implantes">
           <div class="card-img-container">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" 
               alt="Cirugía de implantes dentales en 1 día"
             >
-            <span class="card-img-badge"></span>
+            
           </div>
           <div class="detail-card-body">
             <span class="detail-badge-pill">⚡ Dientes fijos en 24 horas</span>
@@ -129,13 +150,13 @@
         </div>
 
         <!-- Tratamiento 2: Ortodoncia -->
-        <div class="detail-treatment-card" data-category="ortodoncia" id="ortodoncia">
+        <div class="detail-treatment-card reveal" data-category="ortodoncia" id="ortodoncia">
           <div class="card-img-container">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80" 
               alt="Alineadores transparentes invisibles"
             >
-            <span class="card-img-badge"></span>
+            
           </div>
           <div class="detail-card-body">
             <span class="detail-badge-pill">✨ Alineadores 100% invisibles</span>
@@ -162,13 +183,13 @@
         </div>
 
         <!-- Tratamiento 3: Carillas -->
-        <div class="detail-treatment-card" data-category="estetica" id="estetica">
+        <div class="detail-treatment-card reveal" data-category="estetica" id="estetica">
           <div class="card-img-container">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" 
               alt="Carillas de porcelana y diseño de sonrisa"
             >
-            <span class="card-img-badge"></span>
+            
           </div>
           <div class="detail-card-body">
             <span class="detail-badge-pill">💎 Carillas cerámicas ultrafinas</span>
@@ -195,13 +216,13 @@
         </div>
 
         <!-- Tratamiento 4: Blanqueamiento -->
-        <div class="detail-treatment-card" data-category="estetica">
+        <div class="detail-treatment-card reveal" data-category="estetica" id="blanqueamiento">
           <div class="card-img-container">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
               alt="Blanqueamiento dental profesional con lámpara LED"
             >
-            <span class="card-img-badge"></span>
+            
           </div>
           <div class="detail-card-body">
             <span class="detail-badge-pill">🌟 Hasta 6 tonos más blanco</span>
@@ -228,13 +249,13 @@
         </div>
 
         <!-- Tratamiento 5: Periodoncia -->
-        <div class="detail-treatment-card" data-category="general">
+        <div class="detail-treatment-card reveal" data-category="general" id="periodoncia">
           <div class="card-img-container">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=800&q=80" 
               alt="Salud de encías y periodoncia clínica"
             >
-            <span class="card-img-badge"></span>
+            
           </div>
           <div class="detail-card-body">
             <span class="detail-badge-pill">🛡️ Protección del hueso dental</span>
@@ -261,13 +282,13 @@
         </div>
 
         <!-- Tratamiento 6: Odontopediatría -->
-        <div class="detail-treatment-card" data-category="general">
+        <div class="detail-treatment-card reveal" data-category="general" id="odontopediatria">
           <div class="card-img-container">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" 
               alt="Cuidado dental infantil y familiar"
             >
-            <span class="card-img-badge"></span>
+            
           </div>
           <div class="detail-card-body">
             <span class="detail-badge-pill">🧸 Atención empática sin miedo</span>
@@ -296,8 +317,8 @@
       </div>
 
       <!-- BANNER DE SEDACIÓN CONSCIENTE -->
-      <div class="sedation-banner" id="sedacion">
-        <img 
+      <div class="sedation-banner reveal" id="sedacion">
+        <img loading="lazy" 
           src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" 
           alt="Tranquilidad médica en clínica GoalDental" 
           class="sedation-img"
@@ -344,76 +365,49 @@
       <div class="footer-columns-grid">
         <div class="footer-col-brand">
           <h4>CLÍNICA GOALDENTAL <span>ODONTOSTUDIO</span></h4>
-          <p>
-            Odontología médica avanzada, implantes dentales, ortodoncia invisible y estética dental de vanguardia en Alcalá de Henares y Comunidad de Madrid.
-          </p>
-          <div class="top-bar-item" style="color: var(--primary); font-weight: 600;">
-            <span>★ 4.9/5 Calificación de Excelencia en Google</span>
-          </div>
+          <p>Odontología médica avanzada, implantes dentales, ortodoncia invisible y estética dental en Alcalá de Henares y Comunidad de Madrid.</p>
         </div>
-
         <div class="footer-col-links">
           <h5 class="footer-links-title">Navegación</h5>
           <ul class="footer-links-list">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="tratamientos.html">Especialidades Médicas</a></li>
-            <li><a href="contacto.html">Pide Cita Online</a></li>
-            <li><a href="#sedacion">Sedación Consciente</a></li>
+            <li><a href="tratamientos.html">Tratamientos</a></li>
+            <li><a href="index.html#equipo">Equipo</a></li>
+            <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+            <li><a href="contacto.html">Pedir cita</a></li>
           </ul>
         </div>
-
         <div class="footer-col-links">
-          <h5 class="footer-links-title">Horario de Atención</h5>
+          <h5 class="footer-links-title">Horario</h5>
           <ul class="footer-links-list">
-            <li>Lunes a Viernes: 09:00 - 20:30</li>
-            <li>Sábados: Con cita previa</li>
-            <li>Domingos: Urgencias bajo llamada</li>
-            <li>Parking gratuito para pacientes</li>
+            <li>Lunes a viernes: 09:00 - 20:30</li>
+            <li>Sábados: con cita previa</li>
+            <li>Domingos: urgencias bajo llamada</li>
           </ul>
         </div>
-
         <div class="footer-col-links">
-          <h5 class="footer-links-title">Contacto Directo</h5>
+          <h5 class="footer-links-title">Contacto</h5>
           <ul class="footer-links-list">
-            <li><a href="tel:+34918000000">📞 918 00 00 00</a></li>
-            <li><a href="https://wa.me/34600000000">💬 WhatsApp: 600 000 000</a></li>
-            <li>📍 Vía Complutense, 45, Alcalá de Henares</li>
-            <li>✉️ info@goaldental-odontostudio.es</li>
+            <li><a href="tel:+34918000000">918 00 00 00</a></li>
+            <li><a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">WhatsApp: 600 000 000</a></li>
+            <li>Vía Complutense, 45, Alcalá de Henares</li>
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom-bar">
-        <p class="footer-copy">
-          © 2026 CLÍNICA GOALDENTAL • ODONTOSTUDIO - Todos los derechos reservados.
-        </p>
-        <div class="demo-attribution">
-          <span>Web demo médica desarrollada por</span>
-          <a href="../index.html">Slipstream Webs</a>
-        </div>
+        <p class="footer-copy">© 2026 CLÍNICA GOALDENTAL • ODONTOSTUDIO - Todos los derechos reservados.</p>
+        <div class="demo-attribution"><span>Web demo desarrollada por</span> <a href="../index.html">Slipstream Webs</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- SCRIPT PARA FILTROS INTERACTIVOS -->
-  <script>
-    function filterTreatments(category, btn) {
-      // Manejar clase activa de los botones
-      const buttons = document.querySelectorAll('.filter-btn');
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  <div class="float-cta" id="floatCta">
+    <a class="fc-btn fc-call" href="tel:+34918000000"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="fc-label">Llamar</span></a>
+    <a class="fc-btn fc-wa" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+    <a class="fc-btn fc-cita" href="contacto.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Pedir cita</span></a>
+  </div>
 
-      // Filtrar tarjetas
-      const cards = document.querySelectorAll('.detail-treatment-card');
-      cards.forEach(card => {
-        if (category === 'all' || card.getAttribute('data-category') === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
+  <script src="script.js" defer></script>
 
 </body>
 </html>

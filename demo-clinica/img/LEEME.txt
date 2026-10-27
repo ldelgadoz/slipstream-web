@@ -1,0 +1,13 @@
+FOTOS DE LA CLÍNICA (opcionales)
+================================
+La web funciona sin fotos. Si guardas fotos aquí con estos nombres, se
+activan solas (no hay que tocar código):
+
+  hero.jpg       -> foto grande del inicio (vertical u horizontal, mín. 1000 px de ancho)
+  equipo-1.jpg   -> foto del 1.er profesional (retrato, fondo claro)
+  equipo-2.jpg
+  equipo-3.jpg
+  equipo-4.jpg
+
+Pesa menos de 300 KB cada una (comprímelas en squoosh.app).
+Usa solo fotos propias de la clínica o con licencia libre.
