@@ -5,7 +5,7 @@
 <h1 align="center">Slipstream Web's</h1>
 
 <p align="center">
-  Mi landing para ofrecer webs a negocios locales de Alcalá de Henares y alrededores 🚀
+  Mi landing para ofrecer webs a negocios locales de Alcalá de Henares y alrededores 
 </p>
 
 ---
