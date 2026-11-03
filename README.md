@@ -73,5 +73,5 @@ Los textos, opiniones, teléfonos y números de las demos son **de ejemplo**. Se
 ## Contacto
 
 - **Luis Delgado**
-- 📍 Alcalá de Henares y Madrid, España
-- ✉️ luisdelgadozam@gmail.com
+-  Alcalá de Henares y Madrid, España
+-  luisdelgadozam@gmail.com
