@@ -1,42 +1,77 @@
-# Slipstream Web's
+<p align="center">
+  <img src="img/slipstream_logo.png" alt="Logo de Slipstream Web's" width="180">
+</p>
 
-Landing page comercial orientada a servicios de diseño y desarrollo web para negocios locales, centrada en rendimiento, conversión de visitas en clientes y presencia digital efectiva.
+<h1 align="center">Slipstream Web's</h1>
 
-Características
-Rendimiento y velocidad: Estructura ligera en HTML5 semántico y CSS3 puro, sin frameworks pesados ni dependencias externas.
+<p align="center">
+  Mi landing para ofrecer webs a negocios locales de Alcalá de Henares y alrededores 🚀
+</p>
 
-Diseño responsive: Interfaz adaptable a cualquier tamaño de pantalla (móvil, tablet y escritorio) bajo una estética dark mode moderna con acentos neón.
+---
 
-Formulario de contacto funcional: Integración con la API de Web3Forms para recepción directa de consultas comerciales por correo electrónico, con protección anti-spam silenciosa (honeypot).
+## ¿Qué es esto?
 
-Enfoque a conversión: Secciones estructuradas para servicios clave (web corporativa rápida, optimización local y hosting/mantenimiento), flujo de trabajo en tres etapas y llamadas a la acción directas.
+Soy Luis, estudiante de SMR, y estoy empezando a hacer páginas web para negocios de mi zona. Este repo es mi página comercial (la landing) y también las **webs de demostración** que enseño a los clientes para que vean cómo podría quedar la suya.
 
-Tecnologías utilizadas
-HTML5: Marcado semántico y accesible.
+La idea es que sean rápidas, que se vean bien en el móvil y que te acaben escribiendo o llamando.
 
-CSS3: Flexbox, CSS Grid, variables personalizadas y transiciones interactivas.
+## Qué tiene la landing
 
-Web3Forms API: Procesamiento de envíos del formulario de contacto sin backend propio.
+- **Rápida:** solo HTML5 y CSS3, sin frameworks ni cosas pesadas.
+- **Responsive:** se adapta a móvil, tablet y ordenador, con un estilo oscuro con toques neón (el morado del logo).
+- **Formulario de contacto que funciona:** usa la API de Web3Forms, así me llegan los mensajes al correo sin tener backend. Lleva un honeypot para que no se cuele el spam.
+- **Pensada para vender:** servicios claros (web corporativa rápida, optimización local y hosting/mantenimiento), cómo trabajo en tres pasos y botones de contacto bien visibles.
 
-├── index.html            # Estructura principal de la landing page
-├── style.css             # Estilos globales, diseño responsive y paleta de color
-├── slipstream_logo.png   # Logotipo e identidad visual
-└── README.md             # Documentación del proyecto
+## Webs de demostración
 
-Despliegue local
-Clona el repositorio:
+| Carpeta | Qué es |
+|---|---|
+| `demo-restaurante/` | Restaurante con varias páginas: inicio, carta, menú del día, reservas y contacto |
+| `demo-clinica/` | Clínica dental: inicio, tratamientos, equipo, preguntas frecuentes y cita |
+| `demo-taller/` | Taller mecánico en verde lima, con animaciones |
+| `demo-taller-v2/` | Segunda versión del taller en rojo, con scroll horizontal y coche en SVG |
 
-Bash
-git clone [https://github.com/TU_USUARIO/slipstream-web.git](https://github.com/TU_USUARIO/slipstream-web.git)
-Entra en el directorio:
+Los textos, opiniones, teléfonos y números de las demos son **de ejemplo**. Se cambian por los datos reales de cada cliente.
 
-Bash
-cd slipstream-web
-Abre index.html en el navegador o ejecútalo con la extensión Live Server en VS Code.
+## Tecnologías
 
-Contacto & Autor
-Desarrollador: Luis Delgado
+- **HTML5:** estructura semántica.
+- **CSS3:** Flexbox, Grid, variables y transiciones.
+- **JavaScript:** el justo (menús, animaciones al hacer scroll, filtros), sin librerías.
+- **Web3Forms:** para el formulario de contacto.
 
-Ubicación: Alcalá de Henares & Madrid, España
+## Estructura
 
-Email: luisdelgadozam@gmail.com
+```
+├── index.html          # Landing principal
+├── style.css           # Estilos de la landing
+├── img/                # Logo y símbolo de Slipstream
+├── demo-restaurante/   # Demo de restaurante
+├── demo-clinica/       # Demo de clínica dental
+├── demo-taller/        # Demo de taller (verde lima)
+├── demo-taller-v2/     # Demo de taller (rojo, animada)
+└── README.md
+```
+
+## Probarlo en local
+
+1. Clona el repo:
+
+   ```bash
+   git clone https://github.com/ldelgadoz/slipstream-web.git
+   ```
+
+2. Entra en la carpeta:
+
+   ```bash
+   cd slipstream-web
+   ```
+
+3. Abre `index.html` en el navegador o usa la extensión **Live Server** de VS Code (se recarga sola cuando guardas).
+
+## Contacto
+
+- **Luis Delgado**
+- 📍 Alcalá de Henares y Madrid, España
+- ✉️ luisdelgadozam@gmail.com
