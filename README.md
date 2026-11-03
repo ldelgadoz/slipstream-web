@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/slipstream_logo.png" alt="Logo de Slipstream Web's" width="180">
+  <img src="img/slipstream_simbolo_sin_texto.png" alt="Logo de Slipstream Web's" width="180">
 </p>
 
 <h1 align="center">Slipstream Web's</h1>
