@@ -12,7 +12,7 @@
 
 ## ¿Qué es esto?
 
-Soy Luis, estudiante de SMR, y estoy empezando a hacer páginas web para negocios de mi zona. Este repo es mi página comercial (la landing) y también las **webs de demostración** que enseño a los clientes para que vean cómo podría quedar la suya.
+Soy Luis, estudiante de DAM, y estoy empezando a hacer páginas web para negocios de mi zona. Este repo es mi página comercial y también las **webs de demostración** que enseño a los clientes para que vean cómo podría quedar la suya.
 
 La idea es que sean rápidas, que se vean bien en el móvil y que te acaben escribiendo o llamando.
 
