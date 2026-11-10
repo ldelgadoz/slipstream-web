@@ -108,6 +108,7 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 700; line-height: 1.08;
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 
 .brand { display: inline-flex; align-items: center; gap: 12px; font-family: var(--f-display); font-weight: 800; font-size: 0.95rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.brand-logo, .brand img { height: 32px; width: auto; max-height: 40px; object-fit: contain; display: block; }
 .brand-mark { width: 26px; height: 26px; position: relative; flex: none; }
 .brand-mark::before, .brand-mark::after { content: ""; position: absolute; border: 2px solid var(--red); }
 .brand-mark::before { inset: 0; transform: skewX(-18deg); }
